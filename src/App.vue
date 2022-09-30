@@ -1,17 +1,20 @@
 <template>
-  <Header_comp />
+  <!--<Header_comp />-->
   <!--<HelloWorld msg="Welcome to Your Vue.js App"/>-->
+  <Footer_comp />
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue';
-import Header_comp from './components/Header.vue';
+// import Header_comp from './components/Header.vue';
+import Footer_comp from './components/Footer.vue';
 
 export default {
   name: 'App',
   components: {
     // HelloWorld,
-    Header_comp
+    // Header_comp,
+    Footer_comp
   }
 }
 </script>
