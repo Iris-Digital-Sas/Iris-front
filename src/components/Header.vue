@@ -25,7 +25,7 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .5% 4.5% .5% 8%;
+    padding: .5% 4.5% 0% 8%;
   }
   .header img {
     width: 50%;
@@ -39,7 +39,6 @@ export default {
   }
   .header-nav-list a {
     font-weight: 400;
-    font-size: 115%;
     color: white;
   }
   .header-nav-list a:hover {
