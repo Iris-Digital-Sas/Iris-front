@@ -1,5 +1,16 @@
 <template>
-
+  <header>
+    <a href="">image iris digital</a>
+    <nav>
+      <ul>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+      </ul>
+    </nav>
+  </header>
 </template>
 
 <script>
