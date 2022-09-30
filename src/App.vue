@@ -1,32 +1,27 @@
 <template>
-  <div class="is-black">
-    <img alt="Vue logo" src="./assets/logo-iris.png">
-  </div>
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Header_comp />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header_comp from './components/Header.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header_comp
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+  box-sizing: content-box;
+  font-family: 'Poppins', sans-serif;
 }
-
-.is-black{
-  background-color: black;
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
 }
 </style>
