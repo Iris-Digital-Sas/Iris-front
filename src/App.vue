@@ -1,18 +1,15 @@
 <template>
   <!--<Header_comp />-->
-  <!--<HelloWorld msg="Welcome to Your Vue.js App"/>-->
   <Footer_comp />
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue';
 // import Header_comp from './components/Header.vue';
 import Footer_comp from './components/Footer.vue';
 
 export default {
   name: 'App',
   components: {
-    // HelloWorld,
     // Header_comp,
     Footer_comp
   }
@@ -20,8 +17,6 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
-
 * {
   box-sizing: content-box;
   font-family: 'Poppins', sans-serif;
