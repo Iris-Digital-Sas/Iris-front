@@ -1,32 +1,32 @@
 <template>
-  <div class="is-black">
-    <img alt="Vue logo" src="./assets/logo-iris.png">
-  </div>
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Header_comp />
+  <!--<HelloWorld msg="Welcome to Your Vue.js App"/>-->
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue';
+import Header_comp from './components/Header.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // HelloWorld,
+    Header_comp
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 
-.is-black{
-  background-color: black;
+* {
+  box-sizing: content-box;
+  font-family: 'Poppins', sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
 }
 </style>
