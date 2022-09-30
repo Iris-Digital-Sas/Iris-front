@@ -38,4 +38,4 @@ jobs:
 
       - name: Build code
         working-directory: 'src'
-        run: npm run build:ssr
+        run: npm run build
