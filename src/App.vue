@@ -1,5 +1,7 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
+  <div class="is-black">
+    <img alt="Vue logo" src="./assets/logo-iris.png">
+  </div>
   <HelloWorld msg="Welcome to Your Vue.js App"/>
 </template>
 
@@ -22,5 +24,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.is-black{
+  background-color: black;
 }
 </style>
