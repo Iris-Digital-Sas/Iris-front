@@ -21,11 +21,11 @@ export default {
 
 <style>
   .header {
-    background-color:  rgba(33, 33, 50, 0.86);;
+    background-color:  rgba(33, 33, 50, 0.86);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .5% 4.5% 0% 8%;
+    padding: 0 4.5% 0 8%;
   }
   .header img {
     width: 50%;
