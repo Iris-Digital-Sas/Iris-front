@@ -26,6 +26,8 @@ export default {
     justify-content: space-between;
     align-items: center;
     padding: .5% 4.5% 0% 8%;
+    position: fixed;
+    width: 1600px;
   }
   .header img {
     width: 50%;
