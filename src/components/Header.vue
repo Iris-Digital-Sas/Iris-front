@@ -39,9 +39,11 @@ export default {
   }
   .header-nav-list a {
     font-weight: 400;
+    font-size: 105%;
     color: white;
   }
   .header-nav-list a:hover {
     color: #9EAAFF;
   }
+
 </style>
