@@ -44,4 +44,5 @@ export default {
   .header-nav-list a:hover {
     color: #9EAAFF;
   }
+  
 </style>
