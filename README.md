@@ -5,6 +5,11 @@
 npm install
 ```
 
+## Vue router setup
+```
+npm install vue-router@4
+```
+
 ### Compiles and hot-reloads for development
 ```
 npm run serve
