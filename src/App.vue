@@ -1,4 +1,6 @@
 <template>
+  <Header_comp />
+  <router-view />
  <Footer_comp />
 </template>
 
@@ -25,6 +27,13 @@ li {
 }
 a {
   text-decoration: none;
+}
+.bgc-dark-blue {
+  background-color: #14142C;
+  color: white;
+}
+section {
+  height: 1080px;
 }
 
 </style>

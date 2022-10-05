@@ -1,13 +1,13 @@
 <template>
   <header class="header">
-    <a href="#"><img alt="Iris Digital" src="../assets/logo-iris.png" class="header_img"/></a>
+    <router-link to="/"><img alt="Iris Digital" src="../assets/logo-iris.png" class="header_img"/></router-link>
     <nav class="header-nav">
       <ul class="header-nav-list">
-        <li><a href="">NOS SOLUTIONS</a></li>
-        <li><a href="">L'EQUIPE</a></li>
-        <li><a href="">REALISATIONS</a></li>
-        <li><a href="">NOS TARIFS</a></li>
-        <li><a href="">CONTACT</a></li>
+        <li><router-link to="/solutions">NOS SOLUTIONS</router-link></li>
+        <li><router-link to="/team">L'EQUIPE</router-link></li>
+        <li><router-link to="/achievements">REALISATIONS</router-link></li>
+        <li><router-link to="/prices">NOS TARIFS</router-link></li>
+        <li><router-link to="/contact">CONTACT</router-link></li>
       </ul>
     </nav>
   </header>
