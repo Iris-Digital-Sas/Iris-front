@@ -27,7 +27,7 @@ export default {
     align-items: center;
     padding: .5% 4.5% 0% 8%;
     position: fixed;
-    width: 1600px;
+    width: 86%;
   }
   .header img {
     width: 50%;
@@ -41,7 +41,7 @@ export default {
   }
   .header-nav-list a {
     font-weight: 400;
-    font-size: 105%;
+    font-size: 18px;
     color: white;
   }
   .header-nav-list a:hover {
