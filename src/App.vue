@@ -40,7 +40,14 @@ a {
 }
 .lavender-box {
   color: white;
-  background-color: #9EAAFF;
+  background:linear-gradient(  .25turn , #9EAAFF 100%,white 100% );
+  transform: translateX(5);
+  border: 50px linear #9EAAFF;
+}
+.lavender-box:hover {
+  color: #9EAAFF;
+  transition: color 1ms, border 1ms;
+  animation: button-opening 4000ms;
 }
 .lavender-button {
   color: #9EAAFF;
@@ -55,5 +62,21 @@ a {
 section {
   height: 1080px;
 }
-
+@keyframes button-opening {
+  0% {
+    background:linear-gradient(  .25turn , #9EAAFF 100% );
+  }
+  30% {
+    background: linear-gradient(  .25turn ,white 10% , #9EAAFF 100%);
+  }
+  50% {
+    background: linear-gradient(  .25turn ,white 40% , #9EAAFF 100%);
+  }
+  80% {
+    background: linear-gradient(  .25turn ,white 90% , #9EAAFF 100%);
+  }
+  100% {
+    background: linear-gradient(  .25turn ,white 100% , #9EAAFF 100%);
+  }
+}
 </style>

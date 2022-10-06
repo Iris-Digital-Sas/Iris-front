@@ -8,9 +8,11 @@
         <section class="solutions_item">
             <figure class="solutions_item_firstpart">
                 <img src="" alt="">
-                <figurecaption>
-                    <p>“Un site vitrine est un site Web qui présente en ligne les produits ou les services d'une organisation, dans le but de pouvoir attirer simplement l'attention et d'éveiller l'intérêt des internautes de passage, le plus souvent sans permettre d'acheter directement le produit ou le service proposé.”   Wikipedia</p>
-                </figurecaption>
+                <figcaption>
+                    <blockquote>
+                        <p>“Un site vitrine est un site Web qui présente en ligne les produits ou les services d'une organisation, dans le but de pouvoir attirer simplement l'attention et d'éveiller l'intérêt des internautes de passage, le plus souvent sans permettre d'acheter directement le produit ou le service proposé.” <cite> Wikipedia</cite></p> 
+                    </blockquote>                    
+                </figcaption>
             </figure>
             <div class="solutions_item_secondpart">
                 <h2>UI/IX DESIGN</h2>
@@ -25,9 +27,10 @@
         <section class="solutions_item">
             <figure class="solutions_item_firstpart">
                 <img src="" alt="">
-                <figurecaption>
-                    <p>“L'optimisation pour les moteurs de recherche, aussi connue sous le sigle SEO (de l'anglais : search engine optimization), inclut l'ensemble des techniques qui visent à améliorer le positionnement d'une page, d'un site ou d'une application web dans la page de résultats d'un moteur de recherche. “ Wikipedia</p>
-                </figurecaption>
+                <figcaption>
+                    <blockquote>
+                    <p>“L'optimisation pour les moteurs de recherche, aussi connue sous le sigle SEO (de l'anglais : search engine optimization), inclut l'ensemble des techniques qui visent à améliorer le positionnement d'une page, d'un site ou d'une application web dans la page de résultats d'un moteur de recherche. “ <cite> Wikipedia</cite></p></blockquote>
+                </figcaption>
             </figure>
             <div class="solutions_item_secondpart">
                 <h2>SEO</h2>
@@ -41,9 +44,11 @@
         <section class="solutions_item">
             <figure class="solutions_item_firstpart">
                 <img src="" alt="">
-                <figurecaption>
-                    <p>“Un lead représente une piste commerciale à explorer : par exemple, quand un prospect a manifesté son intérêt pour un produit proposé par une société. La plupart du temps, il s'agit d'un contact qualifié puisque le prospect a laissé ses coordonnées pour être rappelé.”  JDN</p>
-                </figurecaption>
+                <figcaption>
+                    <blockquote>
+                    <p>“Un lead représente une piste commerciale à explorer : par exemple, quand un prospect a manifesté son intérêt pour un produit proposé par une société. La plupart du temps, il s'agit d'un contact qualifié puisque le prospect a laissé ses coordonnées pour être rappelé.”  <cite> JDN</cite></p>
+                </blockquote>
+                </figcaption>
             </figure>
             <div class="solutions_item_secondpart">
                 <h2>LEADS</h2>
@@ -57,10 +62,11 @@
         <section class="solutions_item">
             <figure class="solutions_item_firstpart">
                 <img src="" alt="">
-                <figurecaption>
+                <figcaption>
+                    <blockquote>
                     <p>“Le community management permet, entre autres, d'accroître la notoriété de l'entreprise, de développer son portefeuille clients
-                    en trouvant de nouveaux prospects, de fidéliser les clients.” JDN</p>
-                </figurecaption>
+                    en trouvant de nouveaux prospects, de fidéliser les clients.” <cite>JDN</cite></p></blockquote>
+                </figcaption>
             </figure>
             <div class="solutions_item_secondpart">
                 <h2>COMMUNITY MANAGEMENT</h2>
@@ -101,6 +107,14 @@
     border-radius: 40px;
 }
 /* Deuxième Partie */
+/* Image et texte */
+.solutions_item_firstpart figcaption{
+    font-style: italic;
+    background-color: #9EAAFF;
+    width: 40%;
+    padding: 2% 1%;
+}
+/* Description texte */
 .solutions_item_secondpart {
     display: flex;
     gap: 60px;
