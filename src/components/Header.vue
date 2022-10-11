@@ -21,7 +21,8 @@ export default {
 
 <style>
   .header {
-    background-color:  rgba(33, 33, 50, 0.86);;
+    background-color: rgba(20, 20, 44, 0.92);
+    z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
