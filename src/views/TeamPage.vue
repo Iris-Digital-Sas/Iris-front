@@ -9,31 +9,36 @@
             <figure>
                 <img src="" alt="">
                 <figcaption>
-                    <span>Geoffrey</span>
+                    <strong>Geoffrey</strong>
+                    <span>Architecte Logiciel</span>
                 </figcaption>                
             </figure>
             <figure>
                 <img src="" alt="">
                 <figcaption>
-                    <span>Amaury</span>
+                    <strong>Amaury</strong>
+                    <span>Marketing Digital</span>
                 </figcaption>                
             </figure>
             <figure>
                 <img src="" alt="">
                 <figcaption>
-                    <span>Hugo</span>
+                    <strong>Hugo</strong>
+                    <span>Ingénieur Intelligence Artificielle et Ingénierie logiciel</span>
                 </figcaption>                
             </figure>
             <figure>
                 <img src="" alt="">
                 <figcaption>
-                    <span>Sofian</span>
+                    <strong>Sofian</strong>
+                    <span>Marketing Digital</span>
                 </figcaption>                
             </figure>
             <figure>
                 <img src="" alt="">
                 <figcaption>
-                    <span>8457149</span>
+                    <strong>Marie</strong>
+                    <span>Graphiste</span>
                 </figcaption>                
             </figure>
         </div>
@@ -73,7 +78,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 55px;
+    gap: 100px;
 }
 .team-title {
     margin: 0;
@@ -89,6 +94,18 @@
 }
 .team_members figure  {
     margin: 0;
+    flex-basis: 20%;
 }
-
+.team_members figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+.team_members figcaption {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 33px;
+}
 </style>
