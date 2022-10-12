@@ -24,6 +24,9 @@ export default {
   box-sizing: content-box;
   font-family: 'Poppins', sans-serif;
 }
+body {
+  margin: 0;
+}
 li {
   list-style: none;
 }

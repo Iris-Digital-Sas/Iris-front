@@ -3,13 +3,13 @@
         <h1>découvrez les différentes <span class="lavender-text">formules</span> d'iris</h1>
     </section>
     <section class="prices">
-        <div class="prices_info bgc-dark-blue">Retrouvez le symbole <span class="lavender-text ai-icon">?</span>  pour les solutions intégrant de l'IA</div>
+        <div class="prices_info bgc-dark-blue">Retrouvez le symbole <img class="ai-icon-spoiler" src="../assets/AI-original.png" alt="">  pour les solutions intégrant de l'IA</div>
         <h1>NOS TARIFS DE CONCEPTION DE SITE WEB</h1>
         <span>Sélectionnez l'une de nos <span class="lavender-text">3 formules</span></span>
         <div class="formulas">
             <div class="formula">
                 <span class="lavender-text">à partir de <strong>1000 €</strong></span>
-                <div class="most-popular bgc-dark-blue">LE PLUS POPULAIRE</div>
+                <div id="most-popular" class="most-popular bgc-dark-blue">LE PLUS POPULAIRE</div>
                 <h2>Développement CMS</h2>
                 <button class="lavender-box prices_button">Demander un devis</button>
                 <ul>
@@ -22,7 +22,7 @@
                 </ul>
             </div>
             <div class="formula">
-                <div class="ai-icon">?</div>
+                <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
                 <span class="lavender-text">à partir de <strong>1500 €</strong></span>
                 <h2>HTML / PHP</h2>
                 <button class="lavender-box prices_button">Demander un devis</button>
@@ -36,7 +36,7 @@
                 </ul>
             </div>
             <div class="formula">
-                <div class="ai-icon">?</div>
+                <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
                 <span class="lavender-text">à partir de 2000 €</span>
                 <h2>Développement spécifique</h2>
                 <button class="lavender-box prices_button">Demander un devis</button>
@@ -58,7 +58,7 @@
         <span>Sélectionnez l'une de nos <span class="lavender-text">3 formules</span></span>
         <div class="formulas">
             <div class="formula">
-                <div class="ai-icon">?</div>
+                <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
                 <span class="lavender-text">à partir de <strong>490 €</strong> / mois</span>
                 <h2>Campagne Social ADS</h2>
                 <button class="lavender-box prices_button">Demander un devis</button>
@@ -70,7 +70,7 @@
                 </ul>
             </div>
             <div class="formula">
-                <div class="ai-icon">?</div>
+                <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
                 <span class="lavender-text">à partir de <strong>890 €</strong> / mois</span>
                 <div class="most-popular bgc-dark-blue">LE PLUS POPULAIRE</div>
                 <h2>SEO</h2>
@@ -88,7 +88,7 @@
                 </ul>
             </div>
             <div class="formula">
-                <div class="ai-icon">?</div>
+                <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
                 <span class="lavender-text">à partir de <strong>490 €</strong> / mois</span>
                 <h2>SEA</h2>
                 <button class="lavender-box prices_button">Demander un devis</button>
@@ -111,7 +111,7 @@
         <span>Sélectionnez l'une de nos <span class="lavender-text">3 formules</span></span>
         <div class="formulas">
             <div class="formula">
-                <div class="ai-icon">?</div>
+                <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
                 <span class="lavender-text">à partir de <strong>199 €</strong> / mois</span>
                 <h2>Pack présence</h2>
                 <button class="lavender-box prices_button">Demander un devis</button>
@@ -121,7 +121,7 @@
                 </ul>
             </div>
             <div class="formula">
-                <div class="ai-icon">?</div>
+                <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
                 <span class="lavender-text">à partir de <strong>499 €</strong> / mois</span>
                 <div class="most-popular bgc-dark-blue">LE PLUS POPULAIRE</div>
                 <h2>Pack performance</h2>
@@ -139,7 +139,7 @@
                 <a href="" class="formula-look lavender-text">voir plus</a>
             </div>
             <div class="formula">
-                <div class="ai-icon">?</div>
+                <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
                 <span class="lavender-text">à partir de <strong>1499 €</strong> / mois</span>
                 <h2>Pack puissance</h2>
                 <button class="lavender-box prices_button">Demander un devis</button>
@@ -159,7 +159,7 @@
     </section>
     <section class="prices">
         <h1>NOS TARIFS LEADS</h1>
-        <p>La génération de leads est prestation particulière car elle <br>est fortement dépendante de la demande du client, et varie trop fortement <br>pour établir un <strong>tarif généralisé</strong>.</p>
+        <p>La génération de leads est prestation particulière car elle est <br>fortement dépendante de la demande du client, et varie trop fortement <br>pour établir un <strong>tarif généralisé</strong>.</p>
         <p>Dans ce contexte, nous vous encourageons à nous <strong>contacter</strong> via le <br>bouton de contact ci-dessous afin de trouver la formule qui vous<br> conviendra, selon les clients que vous visez, et le budget qui est le vôtre.</p>
         <button class="lavender-box prices_button">Demander un devis</button>
     </section>
@@ -188,6 +188,10 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
+}
+.ai-icon-spoiler {
+   width: 10%;
+   margin: -5% 0;
 }
 .prices h1 {
     margin-top: 13%;
@@ -230,6 +234,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
+    margin-top: 5%;
 }
 .formula h2 {
     font-weight: 600;
@@ -302,9 +307,8 @@
 }
 .formula .ai-icon {
     position: absolute;  
-    right: 30px;
-    top: 30px;
-    font-size: 200%;
+    right: 10px;
+    top: 10px;
 }
 .formula .most-popular {
     position: absolute;
@@ -312,11 +316,14 @@
     font-size: 14px;
     line-height: 21px;
     text-align: center;
-    left: -70px;
+    left: -45px;
     top: 70px;
     border-radius: 50%;
     width: 27%;
     padding: 8.5% .25%;
+}
+#most-popular {
+    left: -70px;
 }
 
 </style>
