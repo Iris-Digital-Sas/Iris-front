@@ -22,6 +22,9 @@ export default {
   box-sizing: content-box;
   font-family: 'Poppins', sans-serif;
 }
+body {
+  margin: 0;
+}
 li {
   list-style: none;
 }
@@ -79,4 +82,6 @@ section {
     background: linear-gradient(  .25turn ,white 100% , #9EAAFF 100%);
   }
 }
+
 </style>
+

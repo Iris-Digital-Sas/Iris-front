@@ -27,7 +27,8 @@ export default {
     align-items: center;
     padding: .5% 4.5% 0% 8%;
     position: fixed;
-    width: 86%;
+    width: 87.5%;
+    z-index: 10;
   }
   .header img {
     width: 50%;
