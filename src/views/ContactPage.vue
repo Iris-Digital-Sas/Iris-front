@@ -1,7 +1,7 @@
 <template>
-    <section class="bgc-dark-blue">
+    <section id="bgc-darker-blue">
         <div class="section-contact">
-            <img src="" alt="Iris-logo-gif" class="section-contact_img">
+            <img src="../assets/Iris-logo.gif" alt="Iris-logo-gif" class="section-contact_img">
             <div class="section-contact-form-bloc">
                 <h1 class="section-contact-form_title">Un projet ? Contactez-nous</h1>
                 <form action="" class="section-contact-form">
@@ -18,42 +18,52 @@
 </template>
 
 <style>
+#bgc-darker-blue {
+    background-color: #13132B;
+    color: white;
+}
 .section-contact {
-    padding: 17% 15%;
-    width: 65%;
+    padding: 17% 0 0 23%;
+    width: 66%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
 .section-contact-form_title {
-    flex-basis: 100%;
+    margin: 0;
+    padding: 0 0 55px 83px;
     font-weight: 600;
-    font-size: 38px;
-    line-height: 57px;
-    padding-left: 10%;
-}
-.section-contact_img, .section-contact-form {
-    height: 270px;
+    font-size: 35px;
 }
 .section-contact_img {
     flex-basis: 20%;
-    align-self: flex-end;
+    position: absolute;
+    height: 420px;
+    width: 40%;
+    background-color: #1F1F30;
+    left: 115px;
+    bottom: 150px;
 }
 .section-contact-form-bloc {
+    z-index: 1;
     display: flex;
     flex-direction: column;
-    flex-basis: 60%;
-    gap: 30px;
+    flex-basis: 81%;
+    /* gap: 30px;  */
 }
 .section-contact-form {
+    width: 40%;
+    height: 290px;
     border-left: solid 2px #9EAAFF;
-    padding-left: 10%;
+    padding-left: 85px; 
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-    align-items: center;
-    column-gap: 45px;
+    align-items: left;
+    column-gap: 50px;
 }
 .section-contact-form :nth-child(-n+5){
+    fill: solid;
+    padding-left: 8%;
     color: #9EAAFF;
     border: solid 2px #9EAAFF;
     background-color: #0000;
@@ -61,16 +71,15 @@
     font-size: 16px;
     line-height: 24px;
     border-radius: 40px;
-    width: 300px;
+    width: 330px; 
 }
 .section-contact-form :nth-child(-n+4){
-    flex-basis: 11%;
-    padding: 1.25% 3.5%;
+    flex-basis: 16%;
 }
 .section-contact-form textarea {
-    width: 367px;
-    height: 160px;
-    padding: 1.5% 3.5%;
+    width: 250px; 
+    height: 175px;
+    padding-top: 14px;
 }
 .section-contact-form :last-child {
     color: white;
@@ -78,8 +87,9 @@
     font-weight: 500;
     font-size: 22px;
     line-height: 33px;
-    padding: 1.5% 7%;
+    padding: 13px 63px;
     border-radius: 40px;
+    margin: 0 auto;
 }
 
 </style>
