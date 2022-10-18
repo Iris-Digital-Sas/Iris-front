@@ -28,7 +28,10 @@ li {
 a {
   text-decoration: none;
 }
-bgc-dark-blue {
+body {
+  margin: 0;
+}
+.bgc-dark-blue {
   background-color: #14142C;
   color: white;
 }
