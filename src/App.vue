@@ -1,7 +1,11 @@
 <template>
   <Header_comp />
-  <router-view />
- <Footer_comp />
+  <div id="container">
+    <main>
+      <router-view />
+    </main>    
+    <Footer_comp />
+  </div>  
 </template>
 
 <script>
@@ -21,6 +25,17 @@ export default {
 * {
   box-sizing: content-box;
   font-family: 'Poppins', sans-serif;
+}
+body {
+  margin: 0;
+}
+#container {
+  height: 100%;
+}
+#container main {
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 100px;
 }
 li {
   list-style: none;
