@@ -38,14 +38,18 @@
                 </figcaption>
             </figure>
         </div>
-        <a href="" class="lavender-box">Découvrir nos solutions</a>
+        <div class="lavender-box">
+            <a href="" class="lavender-box-text">Découvrir nos solutions</a>
+        </div>        
     </section>
     <section class="home-realisations">
         <img src="../assets/home-img.png" alt="">
         <div class="bgc-dark-blue">
             <h1>Pourquoi nous choisir ? </h1>
             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim uptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sintuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fuccaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
-            <a href="" class="lavender-button">REALISATIONS</a>
+            <div class="lavender-button">
+                <a href="" class="lavender-button-text">REALISATIONS</a>
+            </div>
         </div>
     </section>
     <section class="bgc-grey home-annonce">
@@ -62,7 +66,9 @@
                 <input type="text" placeholder="Nom / Prénom">
                 <input type="email" placeholder="Email">
                 <textarea name="" id="" cols="30" rows="6" placeholder="Quelques mots ?"></textarea>
-                <input type="submit" value="CONTACT" class="lavender-box">
+                <div class="lavender-box">
+                    <input type="submit" value="CONTACT" class="lavender-box-text">
+                </div>                
             </form>
         </div>
     </section>
@@ -141,7 +147,7 @@
     line-height: 24px;
 }
 .home-solutions a {
-    padding: 1% 2%;
+    padding: 5% 10%;
     border-radius: 40px;
     font-weight: 500;
     font-size: 22px;
@@ -153,7 +159,7 @@
 .home-realisations>* {
     flex-basis: 50%;
 }
-.home-realisations div {
+.home-realisations .bgc-dark-blue {
     display: flex;
     flex-direction: column;
     padding: 15% 10% 0% 8%;
@@ -220,7 +226,7 @@
     justify-content: space-between;
     gap: 25px;
 }
-.home-contact-bloc form :nth-child(-n+3){
+.home-contact-bloc form > :nth-child(-n+3){
     color: #9EAAFF;
     border: solid 3px #9EAAFF;
     background-color: #0000;
@@ -231,21 +237,36 @@
     width: 317px;
     padding: 3% 8%;  
 }
-.home-contact-bloc form :nth-child(-n+2) {
+.home-contact-bloc form > :nth-child(-n+2) {
     flex-basis: 10%;
 }
 .home-contact form textarea {
     flex-basis: 10%;
 }
-.home-contact-bloc form :last-child {
+.home-contact-bloc form > :last-child {
     position: absolute;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 33px;
     border-radius: 40px;
     padding: 1% 3%;
     bottom: -150px;
     right: 790px;
 }
-
+.home-contact-bloc .lavender-box {
+    height: 25px;
+    width: 100px;
+    color: white;
+}
+.home-contact-bloc .lavender-box .lavender-box-text {
+    position: absolute;
+    top: 13px;
+    left: 47px;
+    color: white;
+    background-color: #0000;
+    border: 0;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+}
+.home-contact-bloc .lavender-box:hover .lavender-box-text {
+    color: #9EAAFF;
+}
 </style>
