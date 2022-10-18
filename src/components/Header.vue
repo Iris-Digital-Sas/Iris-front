@@ -20,33 +20,33 @@ export default {
 </script>
 
 <style>
-  .header {
-    background-color: rgba(20, 20, 44, 0.92);
-    z-index: 10;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: .5% 4.5% 0% 8%;
-    position: fixed;
-    width: 87.5%;
-  }
-  .header img {
-    width: 50%;
-  }
-  .header-nav {
-    flex-basis: 52.5%;
-  }
-  .header-nav-list {
-    display: flex;
-    justify-content: space-between;
-  }
-  .header-nav-list a {
-    font-weight: 400;
-    font-size: 18px;
-    color: white;
-  }
-  .header-nav-list a:hover {
-    color: #9EAAFF;
-  }
-  
+.header {
+  background-color: rgba(20, 20, 44, 0.92);
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5% 4.5% 0% 8%;
+  position: fixed;
+  width: 87.5%;
+}
+.header img {
+  width: 50%;
+}
+.header-nav {
+  flex-basis: 52.5%;
+}
+.header-nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+.header-nav-list a {
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+}
+.header-nav-list a:hover {
+  color: #9EAAFF;
+}
+
 </style>
