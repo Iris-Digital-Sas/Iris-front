@@ -1,7 +1,7 @@
 <template>
   <Header_comp />
   <router-view />
-  <Footer_comp />
+ <Footer_comp />
 </template>
 
 <script>
@@ -13,8 +13,9 @@ name: 'App',
 components: {
   Footer_comp,
   Header_comp
+  }
 }
-}
+
 </script>
 
 <style>
@@ -115,4 +116,4 @@ section {
   transition: transform 500ms;
 }  
  </style>
- 
+

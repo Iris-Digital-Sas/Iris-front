@@ -10,7 +10,7 @@
 
 <script>
 export default {
-name: "Footer_comp"
+  name: "Footer_comp"
 }
 </script>
 
@@ -30,6 +30,4 @@ footer div {
 footer a {
     color: black;
 }
-
 </style>
-    
