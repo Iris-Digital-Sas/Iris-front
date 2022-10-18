@@ -1,10 +1,12 @@
 import { createRouter, createWebHashHistory } from "vue-router"
 import HomePage  from '@/views/HomePage'
+import SolutionsPage from '@/views/SolutionsPage'
 import TeamPage  from '@/views/TeamPage'
 import ContactPage  from '@/views/ContactPage'
+import PricesPage from '@/views/PricesPage'
+import AchievementsPage from '@/views/AchievementsPage'
 
 const router = createRouter({
-  // 4. Provide the history implementation to use. We are using the hash history for simplicity here.
   history: createWebHashHistory(),
   routes: [
     {
@@ -23,5 +25,5 @@ const router = createRouter({
   },
   ]  
 })
-
+ 
 export default router;
