@@ -30,4 +30,5 @@ footer div {
 footer a {
     color: black;
 }
+
 </style>

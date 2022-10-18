@@ -1,5 +1,6 @@
 import { createRouter, createWebHashHistory } from "vue-router"
 import HomePage  from '@/views/HomePage'
+import SolutionsPage from '@/views/SolutionsPage'
 import TeamPage  from '@/views/TeamPage'
  
 const router = createRouter({
