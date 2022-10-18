@@ -1,11 +1,11 @@
 <template>
-  <footer>
-    <div>
-        <span>2022 © IRIS Digital</span>
-        <span>Mentions légales</span>
-    </div>
-    <a href="mailto:hello@irisdigital.fr">hello@irisdigital.fr</a>
-  </footer>
+    <footer>
+        <div>
+            <span>2022 © IRIS Digital</span>
+            <span>Mentions légales</span>
+        </div>
+        <a href="mailto:hello@irisdigital.fr">hello@irisdigital.fr</a>
+    </footer>
 </template>
 
 <script>
@@ -30,5 +30,4 @@ footer div {
 footer a {
     color: black;
 }
-
 </style>
