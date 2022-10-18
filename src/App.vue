@@ -34,6 +34,9 @@ list-style: none;
 a {
 text-decoration: none;
 }
+body {
+  margin: 0;
+}
 .bgc-dark-blue {
 background-color: #14142C;
 color: white;
@@ -57,6 +60,26 @@ background-color: #F5F5F5;
   color: #9EAAFF;
   transition: color 1ms, border 1ms;
   animation: button-opening 4000ms;
+}
+.lavender-button {
+  color: #9EAAFF;
+  border: solid 3px #9EAAFF;
+  background-color: #0000;
+  font-weight: 500;
+  font-size: 137%;
+  line-height: 154%;
+  border-radius: 50px;
+  padding: 1% 4%;
+}
+.bgc-grey {
+  background-color: #F5F5F5;
+}
+.lavender-text {
+  color: #9EAAFF;
+}
+.lavender-box {
+  color: white;
+  background-color: #9EAAFF;
 }
 .lavender-button {
   color: #9EAAFF;
