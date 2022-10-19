@@ -11,7 +11,7 @@
                 <span class="lavender-text">à partir de <strong>1000 €</strong></span>
                 <div id="most-popular" class="most-popular bgc-dark-blue">LE PLUS POPULAIRE</div>
                 <h2>Développement CMS</h2>
-                <button class="lavender-box prices_button">Demander un devis</button>
+                <button class="lavender-box prices_button"><div class="lavender-box-text">Demander un devis</div></button>
                 <ul>
                     <li>Wordpress</li>
                     <li>Prestashop</li>
@@ -25,7 +25,7 @@
                 <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
                 <span class="lavender-text">à partir de <strong>1500 €</strong></span>
                 <h2>HTML / PHP</h2>
-                <button class="lavender-box prices_button">Demander un devis</button>
+                <button class="lavender-box prices_button"><div class="lavender-box-text">Demander un devis</div></button>
                 <ul>
                     <li>Optimisé pour le CEO</li>
                     <li>Rapide et fluide</li>
@@ -39,7 +39,7 @@
                 <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
                 <span class="lavender-text">à partir de 2000 €</span>
                 <h2>Développement spécifique</h2>
-                <button class="lavender-box prices_button">Demander un devis</button>
+                <button class="lavender-box prices_button"><div class="lavender-box-text">Demander un devis</div></button>
                 <ul>
                     <li>Optimisé pour le CEO</li>
                     <li>Rapide et fluide</li>
@@ -61,7 +61,7 @@
                 <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
                 <span class="lavender-text">à partir de <strong>490 €</strong> / mois</span>
                 <h2>Campagne Social ADS</h2>
-                <button class="lavender-box prices_button">Demander un devis</button>
+                <button class="lavender-box prices_button"><div class="lavender-box-text">Demander un devis</div></button>
                 <ul>
                     <li>Facebook ADS</li>
                     <li>Instagram ADS</li>
@@ -74,7 +74,7 @@
                 <span class="lavender-text">à partir de <strong>890 €</strong> / mois</span>
                 <div class="most-popular bgc-dark-blue">LE PLUS POPULAIRE</div>
                 <h2>SEO</h2>
-                <button class="lavender-box prices_button">Demander un devis</button>
+                <button class="lavender-box prices_button"><div class="lavender-box-text">Demander un devis</div></button>
                 <ul>
                     <li>Audit de site</li>
                     <li>Etude de mots-clés</li>
@@ -91,7 +91,7 @@
                 <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
                 <span class="lavender-text">à partir de <strong>490 €</strong> / mois</span>
                 <h2>SEA</h2>
-                <button class="lavender-box prices_button">Demander un devis</button>
+                <button class="lavender-box prices_button"><div class="lavender-box-text">Demander un devis</div></button>
                 <ul>
                     <li>Gestion des campagnes Google Adwords</li>
                     <li>Gestion des campagnes Bing</li>
@@ -114,7 +114,7 @@
                 <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
                 <span class="lavender-text">à partir de <strong>199 €</strong> / mois</span>
                 <h2>Pack présence</h2>
-                <button class="lavender-box prices_button">Demander un devis</button>
+                <button class="lavender-box prices_button"><div class="lavender-box-text">Demander un devis</div></button>
                 <ul>
                     <li>Création ou restructuration comptes / pages</li>
                     <li>1 post chaque semaine</li>
@@ -125,7 +125,7 @@
                 <span class="lavender-text">à partir de <strong>499 €</strong> / mois</span>
                 <div class="most-popular bgc-dark-blue">LE PLUS POPULAIRE</div>
                 <h2>Pack performance</h2>
-                <button class="lavender-box prices_button">Demander un devis</button>
+                <button class="lavender-box prices_button"><div class="lavender-box-text">Demander un devis</div></button>
                 <ul>
                     <li>Création ou restructuration comptes / pages</li>
                     <li>4/5 posts chaque semaine</li>
@@ -142,7 +142,7 @@
                 <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
                 <span class="lavender-text">à partir de <strong>1499 €</strong> / mois</span>
                 <h2>Pack puissance</h2>
-                <button class="lavender-box prices_button">Demander un devis</button>
+                <button class="lavender-box prices_button"><div class="lavender-box-text">Demander un devis</div></button>
                 <ul>
                     <li>Création ou restructuration comptes / pages</li>
                     <li>2/4 posts chaque jour</li>
@@ -161,7 +161,7 @@
         <h1>NOS TARIFS LEADS</h1>
         <p>La génération de leads est prestation particulière car elle est <br>fortement dépendante de la demande du client, et varie trop fortement <br>pour établir un <strong>tarif généralisé</strong>.</p>
         <p>Dans ce contexte, nous vous encourageons à nous <strong>contacter</strong> via le <br>bouton de contact ci-dessous afin de trouver la formule qui vous<br> conviendra, selon les clients que vous visez, et le budget qui est le vôtre.</p>
-        <button class="lavender-box prices_button">Demander un devis</button>
+        <button class="lavender-box prices_button"><div class="lavender-box-text">Demander un devis</div></button>
     </section>
 </template>
 <style>
@@ -253,12 +253,24 @@
     align-self: center;
 }
 .prices_button {
-    padding: 9px 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 0px;
     border-radius: 50px 50px 50px 50px ;
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 15%;
+    margin: 0 auto 15%;
+    width: 240px;
+    height: 45px;
+    border: 2px solid #9EAAFF;
+}
+.prices_button .lavender-box-text {
+    z-index: 1;
+    text-align: center;
+    position: absolute;
 }
 .formula ul {
     text-align: left;
@@ -287,6 +299,18 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
+}
+.formula-look:before {
+    content: " V ";
+    display: inline-block;
+    padding-right: 10px;
+    transform-origin: 7px 10px;
+    transform: rotate(0deg);
+    transition: transform 1000ms;
+}
+.formula-look:hover:before {
+    transform: rotate(-90deg);
+    transition: all 1000ms;
 }
 .prices h1 {
     font-weight: 700;

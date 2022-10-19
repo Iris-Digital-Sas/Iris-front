@@ -100,8 +100,10 @@ section {
   border-radius: 40px;
   display: block;
   width: 100%;
-  height: 100%;
-  transition: background-color 50ms;
+  height: 100%;  
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 1ms, opacity 300ms 1ms;
 }
 .lavender-box:hover .lavender-box-text {
   color: #9EAAFF;
@@ -109,7 +111,8 @@ section {
 }
 .lavender-box:hover::after  {
   transform: translateX(330px);
-  transition: transform 500ms;
+  opacity: 0;
+  transition: transform 500ms ,opacity 1ms 500ms;
 }
 .lavender-button {
   position: relative;
