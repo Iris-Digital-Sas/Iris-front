@@ -1,8 +1,9 @@
 <template>
     <section class="solution_intro bgc-grey">
         <h1 class="solution_intro-title">IRIS VOUS OFFRE UNE <br><span class="lavender-text">EXPERTISE</span> COMPLETE TRUC REMPLACER</h1>
-        <a href="" class="solution_intro-button lavender-box">NOS TARIFS</a>
-        <!-- Le bouton devrait se siter plus bas, chercher solution -->
+        <div class="lavender-box solution_intro-button">
+            <a href="" class="lavender-box-text">NOS TARIFS</a>
+        </div>        
     </section>
     <div class="bgc-dark-blue solutions">
         <section class="solutions_item">
@@ -79,7 +80,10 @@
                     <a href=""><font-awesome-icon :icon="['fas', 'arrow-down-right']" />PLUS D'INFOS</a>
                 </div>
             </div>
-            <button class="lavender-button">NOS TARIFS</button>
+            <div class="lavender-button">
+                <a href="" class="lavender-button-text">NOS TARIFS</a>
+            </div>
+            <!-- Problème de synchronisation des animations, parfois le texte change de couleur trop tard -->
         </section>
     </div> 
 </template>
@@ -89,22 +93,26 @@
 .solution_intro {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap:220px;
+    padding-left: 70px;
 }
 .solution_intro-title {
+    letter-spacing: -2px;
     font-weight: 600;
-    font-size: 38px;
+    font-size: 33px;
     line-height: 57px;
     text-align: center;
+    padding: 28% 0 0% 0%;
+    margin: 0;
 }
 .solution_intro-button {
     font-weight: 500;
     font-size: 22px;
     line-height: 33px;
-    padding: 1.125% 4.2%;
     border-radius: 40px;
+    width: 235px;
+    height: 58px;
 }
 /* Deuxième Partie */
 .solutions_item {
@@ -164,7 +172,24 @@
     color: white;
     font-weight: 600;
     line-height: 24px;
+    transition: color 700ms;
 }
+.solutions_item_secondpart_textarea a::before {
+    content: " V ";
+    display: inline-block;
+    padding-right: 10px;
+    transform: rotate(0deg);
+    transition: transform 700ms;
+}
+.solutions_item_secondpart_textarea a:hover {
+    color: #9EAAFF;
+    transition: all 700ms ease;
+}
+.solutions_item_secondpart_textarea a:hover:before {
+    transform-origin: 7px 11px;
+    transform: rotate(-90deg);
+    transition: all 700ms;
+} 
 .solutions_item h2 {
     padding: 0 15% 0 10%;
     line-height: 60%;
@@ -269,13 +294,18 @@
     flex-basis: 30%;
     padding: 2.5% 0 7%;
 }
-.solutions_item button {
+.solutions_item .lavender-button {
+    margin: 9% auto 6%;
+}
+.solutions_item .lavender-button-text {
+    top: 13px;
+    left: 50px;
     font-weight: 500;
     font-size: 22px;
     line-height: 33px;
     text-align: center;
-    margin: 5% 40%;
-    padding: .75% 2.5%;
+    background-color: #0000;
+    border: 0;
 }
 
 </style>
