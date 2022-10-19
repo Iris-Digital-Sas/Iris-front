@@ -2,10 +2,10 @@
     <section class="origin-section">
         <div>
             <p>IRIS met à votre service l’Intelligence Artificielle. boostez votre <span class="lavender-text">visibilité</span></p>
-            <a href="#home">./.</a>
+            <a href="#begining">./.</a>
         </div>
     </section>
-    <section id="home" class="bgc-grey home-solutions">
+    <section id="begining" class="bgc-grey home-solutions">
         <h1>Ce que IRIS vous propose</h1>
         <span>Toutes nos solutions sont dopées à <span class="lavender-text">l’Intelligence Artificielle</span></span>
         <div>
@@ -39,8 +39,8 @@
             </figure>
         </div>
         <div class="lavender-box">
-            <a href="" class="lavender-box-text">Découvrir nos solutions</a>
-        </div>        
+            <router-link to="/solutions" class="lavender-box-text">Découvrir nos solutions</router-link>
+        </div>               
     </section>
     <section class="home-realisations">
         <img src="../assets/home-img.png" alt="">
@@ -48,7 +48,7 @@
             <h1>Pourquoi nous choisir ? </h1>
             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim uptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sintuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fuccaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
             <div class="lavender-button">
-                <a href="" class="lavender-button-text">REALISATIONS</a>
+                <router-link to="/achievements" class="lavender-button-text">REALISATIONS</router-link>
             </div>
         </div>
     </section>
