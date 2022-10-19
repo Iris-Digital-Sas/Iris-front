@@ -2,7 +2,7 @@
     <section class="solution_intro bgc-grey">
         <h1 class="solution_intro-title">IRIS VOUS OFFRE UNE <br><span class="lavender-text">EXPERTISE</span> COMPLETE TRUC REMPLACER</h1>
         <div class="lavender-box solution_intro-button">
-            <a href="" class="lavender-box-text">NOS TARIFS</a>
+            <router-link to="/prices" class="lavender-box-text">NOS TARIFS</router-link>
         </div>        
     </section>
     <div class="bgc-dark-blue solutions">
@@ -81,7 +81,7 @@
                 </div>
             </div>
             <div class="lavender-button">
-                <a href="" class="lavender-button-text">NOS TARIFS</a>
+                <router-link to="/prices" class="lavender-button-text">NOS TARIFS</router-link>
             </div>
             <!-- Problème de synchronisation des animations, parfois le texte change de couleur trop tard -->
         </section>
