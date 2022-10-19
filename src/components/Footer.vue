@@ -16,19 +16,20 @@ export default {
 
 <style>
 footer {
-    display: flex;
-    justify-content: space-between;
-    margin: 3.5% 4.5% 2.5% 8%;
-    padding-bottom: 1%;
-    border-bottom: 1px solid black;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  margin: 3.5% 4.5% 2.5% 8%;
+  padding-bottom: 1%;
+  border-bottom: 1px solid black;
 }
 footer div {
-    flex-basis: 19%;
-    display: flex;
-    justify-content: space-between;
+  flex-basis: 19%;
+  display: flex;
+  justify-content: space-between;
 }
 footer a {
-    color: black;
+  color: black;
 }
 
 </style>

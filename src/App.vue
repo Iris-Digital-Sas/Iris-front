@@ -1,9 +1,11 @@
 <template>
   <Header_comp />
-  <main>
-    <router-view />
-  </main>
- <Footer_comp />
+  <div id="container">
+    <main>
+      <router-view />
+    </main>    
+    <Footer_comp />
+  </div>  
 </template>
 
 <script>
@@ -28,8 +30,13 @@ components: {
 body {
   margin: 0;
 }
-body {
-  margin: 0;
+#container {
+  height: 100%;
+}
+#container main {
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 100px;
 }
 li {
   list-style: none;
