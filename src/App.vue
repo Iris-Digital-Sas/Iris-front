@@ -86,6 +86,9 @@ section {
   overflow: hidden;
   width: 330px;
   height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .lavender-box .lavender-box-text {
   color: white;
