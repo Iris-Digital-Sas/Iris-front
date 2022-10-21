@@ -2,7 +2,7 @@
     <section class="bgc-dark-blue title-prices">
         <h1>découvrez les différentes <span class="lavender-text">formules</span> d'iris</h1>
     </section>
-    <section class="prices" id="Web design">
+    <section class="prices" id="prices_webdesign">
         <div class="prices_info bgc-dark-blue">Retrouvez le symbole <img class="ai-icon-spoiler" src="../assets/AI-original.png" alt="">  pour les solutions intégrant de l'IA</div>
         <h1>NOS TARIFS DE CONCEPTION DE SITE WEB</h1>
         <span>Sélectionnez l'une de nos <span class="lavender-text">3 formules</span></span>
@@ -53,7 +53,7 @@
             </div>
         </div>
     </section>
-    <section class="prices" id="SEO">
+    <section class="prices" id="prices_seo">
         <h1>NOS TARIFS SEO</h1>
         <span>Sélectionnez l'une de nos <span class="lavender-text">3 formules</span></span>
         <div class="formulas">
@@ -106,7 +106,7 @@
             </div>
         </div>
     </section>
-    <section class="prices" id="CM">
+    <section class="prices" id="prices_cm">
         <h1>NOS TARIFS DE COMMUNITY MANAGEMENT</h1>
         <span>Sélectionnez l'une de nos <span class="lavender-text">3 formules</span></span>
         <div class="formulas">
@@ -157,7 +157,7 @@
             </div>
         </div>
     </section>
-    <section class="prices" id="Leads">
+    <section class="prices" id="prices_leads">
         <h1>NOS TARIFS LEADS</h1>
         <p>La génération de leads est prestation particulière car elle est <br>fortement dépendante de la demande du client, et varie trop fortement <br>pour établir un <strong>tarif généralisé</strong>.</p>
         <p>Dans ce contexte, nous vous encourageons à nous <strong>contacter</strong> via le <br>bouton de contact ci-dessous afin de trouver la formule qui vous<br> conviendra, selon les clients que vous visez, et le budget qui est le vôtre.</p>
