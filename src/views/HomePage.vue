@@ -2,10 +2,10 @@
     <section class="origin-section">
         <div>
             <p>IRIS met à votre service l’Intelligence Artificielle. boostez votre <span class="lavender-text">visibilité</span></p>
-            <a href="#home">./.</a>
+            <a href="#begining"><font-awesome-icon icon="fa-solid fa-arrow-down" /></a>
         </div>
     </section>
-    <section id="home" class="bgc-grey home-solutions">
+    <section id="begining" class="bgc-grey home-solutions">
         <h1>Ce que IRIS vous propose</h1>
         <span>Toutes nos solutions sont dopées à <span class="lavender-text">l’Intelligence Artificielle</span></span>
         <div>
@@ -39,8 +39,8 @@
             </figure>
         </div>
         <div class="lavender-box">
-            <a href="" class="lavender-box-text">Découvrir nos solutions</a>
-        </div>        
+            <router-link to="/solutions" class="lavender-box-text">Découvrir nos solutions</router-link>
+        </div>               
     </section>
     <section class="home-realisations">
         <img src="../assets/home-img.png" alt="">
@@ -48,7 +48,7 @@
             <h1>Pourquoi nous choisir ? </h1>
             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim uptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sintuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fuccaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
             <div class="lavender-button">
-                <a href="" class="lavender-button-text">REALISATIONS</a>
+                <router-link to="/achievements" class="lavender-button-text">REALISATIONS</router-link>
             </div>
         </div>
     </section>
@@ -60,7 +60,9 @@
             <div class="home-contact-bloc-text">
                 <h1>On discute ?</h1>
                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
-                <span>hello@irisdigital.fr</span>
+                <div class="home-contact-bloc-text_email">
+                    <img src="../assets/email.png" alt="email"><span>hello@irisdigital.fr</span>
+                </div>
             </div>
             <form action="">
                 <input type="text" placeholder="Nom / Prénom">
@@ -80,21 +82,30 @@
     color: white;
 }
 .origin-section div{
-    padding: 33% 8%;
+    padding: 36% 4.5% 0 8%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+}
+.origin-section a svg {
+    color:  white;
+    margin-bottom: 25px;
+    width: 30px;
+    height: 30px;
+    padding: 20%;
+    border: white 3px solid;
+    border-radius: 50%;
 }
 .origin-section div p{
     margin: 0;
     flex-basis: 65%;
     font-weight: 600;
-    font-size: 58px;
+    font-size: 50px;
     line-height: 87px;
     text-transform: uppercase;
 }
 .home-solutions {
-    padding: 15% 3% 0 13%;
+    padding: 15% 0 13%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,13 +124,14 @@
 }
 .home-solutions div {
     display: flex;
+    justify-content: center;
     gap: 45px;
     margin-bottom: 100px;
 }
 .home-solutions figure {
     margin: 0;
     height: 275px;
-    flex-basis: 20%;
+    flex-basis: 15%;
     text-align: center;
     padding: 3% .75%;
     background-color: white;
@@ -162,18 +174,21 @@
 .home-realisations .bgc-dark-blue {
     display: flex;
     flex-direction: column;
-    padding: 15% 10% 0% 8%;
+    padding: 300px 0 0 150px;
 }
 .home-realisations div h1{
+    width: 499px;
+    height: 52px;
     font-weight: 900;
-    font-size: 38px;
+    font-size: 35px;
     line-height: 57px;
 }
 .home-realisations div p{
+    width: 560px;
+    height: 282px;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 100px;
 }
 .home-realisations div a{
     font-weight: 500;
@@ -213,6 +228,15 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 17%;
+}
+.home-contact-bloc-text_email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.home-contact-bloc-text_email img {
+    width: 35px;
+    height: 35px;
 }
 .home-contact-bloc span {
     font-weight: 400;

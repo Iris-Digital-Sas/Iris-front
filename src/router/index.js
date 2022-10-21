@@ -12,7 +12,13 @@ const router = createRouter({
     {
         name: "HomePage",
         path: '/',
-        component: HomePage 
+        component: HomePage,
+        children: [{
+          path:'/:id',
+          name:'HomePage',
+          component: HomePage
+        }
+      ] 
     },
     { 
       path: '/solutions',
