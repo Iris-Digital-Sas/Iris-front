@@ -136,7 +136,7 @@
                     <li>Modération de la page</li>
                     <li>Gestion E-réputation</li>
                 </ul>
-                <a href="" class="formula-look lavender-text"><font-awesome-icon icon="fa-solid fa-arrow-down" /> voir plus</a>
+                <a class="formula-look lavender-text"><font-awesome-icon icon="fa-solid fa-arrow-down" /> voir plus</a>
             </div>
             <div class="formula">
                 <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
@@ -153,7 +153,7 @@
                     <li>Modération de la page</li>
                     <li>Gestion E-réputation</li>
                 </ul>
-                <a href="" class="formula-look lavender-text"><font-awesome-icon icon="fa-solid fa-arrow-down" /> voir plus</a>
+                <a class="formula-look lavender-text"><font-awesome-icon icon="fa-solid fa-arrow-down" /> voir plus</a>
             </div>
         </div>
     </section>
