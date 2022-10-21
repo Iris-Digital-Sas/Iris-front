@@ -2,7 +2,7 @@
     <section class="bgc-dark-blue title-prices">
         <h1>découvrez les différentes <span class="lavender-text">formules</span> d'iris</h1>
     </section>
-    <section class="prices">
+    <section class="prices" id="Web design">
         <div class="prices_info bgc-dark-blue">Retrouvez le symbole <img class="ai-icon-spoiler" src="../assets/AI-original.png" alt="">  pour les solutions intégrant de l'IA</div>
         <h1>NOS TARIFS DE CONCEPTION DE SITE WEB</h1>
         <span>Sélectionnez l'une de nos <span class="lavender-text">3 formules</span></span>
@@ -53,7 +53,7 @@
             </div>
         </div>
     </section>
-    <section class="prices">
+    <section class="prices" id="SEO">
         <h1>NOS TARIFS SEO</h1>
         <span>Sélectionnez l'une de nos <span class="lavender-text">3 formules</span></span>
         <div class="formulas">
@@ -106,7 +106,7 @@
             </div>
         </div>
     </section>
-    <section class="prices">
+    <section class="prices" id="CM">
         <h1>NOS TARIFS DE COMMUNITY MANAGEMENT</h1>
         <span>Sélectionnez l'une de nos <span class="lavender-text">3 formules</span></span>
         <div class="formulas">
@@ -136,7 +136,7 @@
                     <li>Modération de la page</li>
                     <li>Gestion E-réputation</li>
                 </ul>
-                <a href="" class="formula-look lavender-text">voir plus</a>
+                <a href="" class="formula-look lavender-text"><font-awesome-icon icon="fa-solid fa-arrow-down" /> voir plus</a>
             </div>
             <div class="formula">
                 <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
@@ -153,11 +153,11 @@
                     <li>Modération de la page</li>
                     <li>Gestion E-réputation</li>
                 </ul>
-                <a href="" class="formula-look lavender-text">voir plus</a>
+                <a href="" class="formula-look lavender-text"><font-awesome-icon icon="fa-solid fa-arrow-down" /> voir plus</a>
             </div>
         </div>
     </section>
-    <section class="prices">
+    <section class="prices" id="Leads">
         <h1>NOS TARIFS LEADS</h1>
         <p>La génération de leads est prestation particulière car elle est <br>fortement dépendante de la demande du client, et varie trop fortement <br>pour établir un <strong>tarif généralisé</strong>.</p>
         <p>Dans ce contexte, nous vous encourageons à nous <strong>contacter</strong> via le <br>bouton de contact ci-dessous afin de trouver la formule qui vous<br> conviendra, selon les clients que vous visez, et le budget qui est le vôtre.</p>
@@ -295,22 +295,22 @@
 }
 .formula-look {
     text-transform: uppercase;
-    margin-right: 35%;
+    margin-left: 70px;
+    float: left;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
 }
-.formula-look:before {
-    content: " V ";
-    display: inline-block;
-    padding-right: 10px;
+.formula-look svg {
+    width: 15px;
+    height: 18px;
     transform-origin: 7px 10px;
-    transform: rotate(0deg);
-    transition: transform 1000ms;
+    transform: rotate(-45deg);
+    transition: transform 500ms 100ms;
 }
-.formula-look:hover:before {
+.formula-look:hover svg {
     transform: rotate(-90deg);
-    transition: all 1000ms;
+    transition: all 500ms 100ms;
 }
 .prices h1 {
     font-weight: 700;
