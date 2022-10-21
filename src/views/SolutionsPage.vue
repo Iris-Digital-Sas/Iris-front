@@ -6,7 +6,7 @@
         </div>        
     </section>
     <div class="bgc-dark-blue solutions">
-        <section class="solutions_item">
+        <section class="solutions_item" id="solution_ux/ui">
             <figure class="solutions_item_firstpart">
                 <img src="../assets/SolutionImg1.png" alt="">
                 <figcaption>
@@ -15,7 +15,7 @@
                     </blockquote>                    
                 </figcaption>
             </figure>
-            <div class="solutions_item_secondpart">
+            <div class="solutions_item_secondpart" >
                 <h2>UI/IX DESIGN</h2>
                 <div class="solutions_item_secondpart_textarea">
                     <p>Nous réalisons vos sites <strong>vitrines</strong> et <strong>e-commerces</strong> avec différentes technologies, en discutant avec vous pour trouver la réponse la plus adaptée à vos besoins et à votre budget.</p>
@@ -25,7 +25,7 @@
                 </div>
             </div>
         </section>
-        <section class="solutions_item">
+        <section class="solutions_item" id="solution_seo">
             <figure class="solutions_item_firstpart">
                 <img src="../assets/SolutionImg2.png" alt="">
                 <figcaption>
@@ -42,7 +42,7 @@
                 </div>
             </div>
         </section>
-        <section class="solutions_item">
+        <section class="solutions_item" id="solution_leads">
             <figure class="solutions_item_firstpart">
                 <img src="../assets/SolutionImg3.png" alt="">
                 <figcaption>
@@ -60,7 +60,7 @@
                 </div>
             </div>
         </section>
-        <section class="solutions_item">
+        <section class="solutions_item" id="solution_cm">
             <figure class="solutions_item_firstpart">
                 <img src="../assets/SolutionImg4.png" alt="">
                 <figcaption>
