@@ -53,7 +53,7 @@
             </div>
         </div>
     </section>
-    <section class="prices">
+    <section class="prices" id="SEO">
         <h1>NOS TARIFS SEO</h1>
         <span>Sélectionnez l'une de nos <span class="lavender-text">3 formules</span></span>
         <div class="formulas">
