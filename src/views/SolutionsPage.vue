@@ -6,7 +6,7 @@
         </div>        
     </section>
     <div class="bgc-dark-blue solutions">
-        <section class="solutions_item" id="solution_ux/ui">
+        <section class="solutions_item" id="solution_webdesign">
             <figure class="solutions_item_firstpart">
                 <img src="../assets/SolutionImg1.png" alt="">
                 <figcaption>
