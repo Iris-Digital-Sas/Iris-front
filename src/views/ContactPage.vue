@@ -10,7 +10,10 @@
                     <input type="email" placeholder="Email*" required>
                     <input type="tel" placeholder="Téléphone">
                     <textarea name="" id="" cols="30" rows="10" placeholder="Quelques mots ?"></textarea>
-                    <input type="submit" value="ENVOYER">
+                    <input id="contact-button" type="submit" value="ENVOYER">
+                    <div id="fa-button">
+                        <span>V</span>
+                    </div>                    
                 </form>
             </div>            
         </div>
@@ -40,8 +43,8 @@
     height: 420px;
     width: 40%;
     background-color: #1F1F30;
-    left: 115px;
-    bottom: 150px;
+    left: 110px;
+    bottom: 370px;
 }
 .section-contact-form-bloc {
     z-index: 1;
@@ -81,7 +84,8 @@
     height: 175px;
     padding-top: 14px;
 }
-.section-contact-form :last-child {
+.section-contact-form #contact-button {
+    position: relative;
     color: white;
     background-color: #9EAAFF;
     font-weight: 500;
@@ -90,6 +94,32 @@
     padding: 13px 63px;
     border-radius: 40px;
     margin: 0 auto;
+    border: 0;
+}
+#fa-button {
+    width: 230px;
+    height: 59px;
+    display: block;
+    position: relative;
+    top: 231px;
+    right: 345px;
+    color: white;
+    border: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+#fa-button span {
+    position: absolute;
+    width: 20px;
+    border: 0;
+    color: white;
+    font-size: 25px;
+}
+#fa-button:hover span {
+    transform-origin: 30px 10px;
+    transform: rotate(-90deg);
+    transition: transform 500ms;
 }
 
 </style>
