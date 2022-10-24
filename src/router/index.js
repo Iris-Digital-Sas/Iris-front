@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from "vue-router"
+import { createRouter, createWebHistory } from "vue-router"
 import HomePage  from '@/views/HomePage'
 import SolutionsPage from '@/views/SolutionsPage'
 import TeamPage  from '@/views/TeamPage'
@@ -7,39 +7,46 @@ import PricesPage from '@/views/PricesPage'
 import ContactPage  from '@/views/ContactPage'
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  scrollBehavior() {
+     return { top: 0 }
+  },
+  history: createWebHistory(),
   routes: [
     {
-        name: "HomePage",
-        path: '/',
-        component: HomePage,
-        children: [{
-          path:'/:id',
-          name:'HomePage',
-          component: HomePage
-        }
-      ] 
+      name: "HomePage",
+      path: '/',
+      component: HomePage
     },
     { 
       path: '/solutions',
       component: SolutionsPage 
     },
     { 
-        path: '/team',
-        component: TeamPage 
+      path: '/team',
+      component: TeamPage 
     },
     { 
       path: '/achievements',
       component: AchievementsPage 
     },
     { 
+      name:'PricesPage',
       path: '/prices',
-      component: PricesPage 
+      component: PricesPage,
+      children: [{
+          path:'/prices/:id',
+          component: PricesPage,
+        }
+      ] 
     },
     {
       path: '/contact',
       component: ContactPage 
     },
+    {
+      path: '/:catchAll(.*)',
+      name: 'NotFound',
+    }
   ]  
 })
  

@@ -21,35 +21,109 @@
                     <li>Autres cms et scripts</li>
                 </ul>
             </div>
-            <div class="formula">
-                <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
-                <span class="lavender-text">à partir de <strong>1500 €</strong></span>
-                <h2>HTML / PHP</h2>
-                <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/contact">Demander un devis</router-link></button>
-                <ul>
-                    <li>Optimisé pour le CEO</li>
-                    <li>Rapide et fluide</li>
-                    <li>Compression du code / images</li>
-                    <li>Protocole SSL</li>
-                    <li>Analyse du trafic web</li>
-                    <li>Responsive tablette / mobile</li>
-                </ul>
+        </section>
+        <section class="prices" id="seo">
+            <h1>NOS TARIFS SEO</h1>
+            <span>Sélectionnez l'une de nos <span class="lavender-text">3 formules</span></span>
+            <div class="formulas">
+                <div class="formula">
+                    <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
+                    <span class="lavender-text">à partir de <strong>490 €</strong> / mois</span>
+                    <h2>Campagne Social ADS</h2>
+                    <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/contact">Demander un devis</router-link></button>
+                    <ul>
+                        <li>Facebook ADS</li>
+                        <li>Instagram ADS</li>
+                        <li>Twitter ADS</li>
+                        <li>Linkedin ADS</li>
+                    </ul>
+                </div>
+                <div class="formula">
+                    <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
+                    <span class="lavender-text">à partir de <strong>890 €</strong> / mois</span>
+                    <div class="most-popular bgc-dark-blue">LE PLUS POPULAIRE</div>
+                    <h2>SEO</h2>
+                    <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/contact">Demander un devis</router-link></button>
+                    <ul>
+                        <li>Audit de site</li>
+                        <li>Etude de mots-clés</li>
+                        <li>Optimisation on-site</li>
+                        <li>Intégration</li>
+                        <li>Création de contenu</li>
+                        <li>Stratégie de netlinking</li>
+                        <li>Analysse de liens entrants</li>
+                        <li>Surveillance de la concurrence</li>
+                        <li>Rapport de positionnement en temps réel</li>
+                    </ul>
+                </div>
+                <div class="formula">
+                    <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
+                    <span class="lavender-text">à partir de <strong>490 €</strong> / mois</span>
+                    <h2>SEA</h2>
+                    <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/contact">Demander un devis</router-link></button>
+                    <ul>
+                        <li>Gestion des campagnes Google Adwords</li>
+                        <li>Gestion des campagnes Bing</li>
+                        <li>Publicité Display</li>
+                        <li>Publicité sur mobile</li>
+                        <li>Google shopping</li>
+                        <li>Publicité Google My Business</li>
+                        <li>Annonces vidéos</li>
+                        <li>Google analytics IQ</li>
+                        <li>Autres régies publicitaires</li>
+                    </ul>
+                </div>
             </div>
-            <div class="formula">
-                <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
-                <span class="lavender-text">à partir de 2000 €</span>
-                <h2>Développement spécifique</h2>
-                <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/contact">Demander un devis</router-link></button>
-                <ul>
-                    <li>Optimisé pour le CEO</li>
-                    <li>Rapide et fluide</li>
-                    <li>Compression du code / images</li>
-                    <li>Protocole SSL</li>
-                    <li>Analyse du trafic web</li>
-                    <li>Responsive tablette / mobile</li>
-                    <li>Géolocalisation</li>
-                    <li>Notifications web</li>
-                </ul>
+        </section>
+        <section class="prices">
+            <h1>NOS TARIFS DE COMMUNITY MANAGEMENT</h1>
+            <span>Sélectionnez l'une de nos <span class="lavender-text">3 formules</span></span>
+            <div class="formulas">
+                <div class="formula">
+                    <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
+                    <span class="lavender-text">à partir de <strong>199 €</strong> / mois</span>
+                    <h2>Pack présence</h2>
+                    <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/contact">Demander un devis</router-link></button>
+                    <ul>
+                        <li>Création ou restructuration comptes / pages</li>
+                        <li>1 post chaque semaine</li>
+                    </ul>
+                </div>
+                <div class="formula">
+                    <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
+                    <span class="lavender-text">à partir de <strong>499 €</strong> / mois</span>
+                    <div class="most-popular bgc-dark-blue">LE PLUS POPULAIRE</div>
+                    <h2>Pack performance</h2>
+                    <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/contact">Demander un devis</router-link></button>
+                    <ul>
+                        <li>Création ou restructuration comptes / pages</li>
+                        <li>4/5 posts chaque semaine</li>
+                        <li>Stratégie social média et planning éditorial</li>
+                        <li>Création de votre boutique en ligne</li>
+                        <li>Création de contenus personnalisés</li>
+                        <li>Gestion des commentaires</li>
+                        <li>Modération de la page</li>
+                        <li>Gestion E-réputation</li>
+                    </ul>
+                    <a href="" class="formula-look lavender-text">voir plus</a>
+                </div>
+                <div class="formula">
+                    <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
+                    <span class="lavender-text">à partir de <strong>1499 €</strong> / mois</span>
+                    <h2>Pack puissance</h2>
+                    <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/contact">Demander un devis</router-link></button>
+                    <ul>
+                        <li>Création ou restructuration comptes / pages</li>
+                        <li>2/4 posts chaque jour</li>
+                        <li>Stratégie social média et planning éditorial</li>
+                        <li>Création de votre boutique en ligne</li>
+                        <li>Création de contenus personnalisés</li>
+                        <li>Gestion des commentaires</li>
+                        <li>Modération de la page</li>
+                        <li>Gestion E-réputation</li>
+                    </ul>
+                    <a href="" class="formula-look lavender-text">voir plus</a>
+                </div>
             </div>
         </div>
     </section>
@@ -164,6 +238,7 @@
         <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/contact">Demander un devis</router-link></button>
     </section>
 </template>
+
 <style>
 .title-prices {
     display: flex;

@@ -6,7 +6,7 @@
         </div>        
     </section>
     <div class="bgc-dark-blue solutions">
-        <section class="solutions_item">
+        <section class="solutions_item" id="wd">
             <figure class="solutions_item_firstpart">
                 <img src="../assets/SolutionImg1.png" alt="">
                 <figcaption>
@@ -15,17 +15,17 @@
                     </blockquote>                    
                 </figcaption>
             </figure>
-            <div class="solutions_item_secondpart">
+            <div class="solutions_item_secondpart" >
                 <h2>UI/IX DESIGN</h2>
                 <div class="solutions_item_secondpart_textarea">
                     <p>Nous réalisons vos sites <strong>vitrines</strong> et <strong>e-commerces</strong> avec différentes technologies, en discutant avec vous pour trouver la réponse la plus adaptée à vos besoins et à votre budget.</p>
                     <p>Votre site sera <strong>optimisé</strong> pour un affichage sur ordinateur, mais également sur téléphone, tablette et autres supports.</p>
                     <p>Nous vous fournissons un site <strong>favorisé par l’algorithme</strong> de Google, afin que vos clients potentiels le trouvent facilement lors de leurs recherches.</p>
-                    <a href=""><font-awesome-icon :icon="['fas', 'arrow-down-right']" />PLUS D'INFOS</a>
+                    <a href="/prices/#wd"><font-awesome-icon icon="fa-solid fa-arrow-down" /> PLUS D'INFOS</a>
                 </div>
             </div>
         </section>
-        <section class="solutions_item">
+        <section class="solutions_item" id="seo">
             <figure class="solutions_item_firstpart">
                 <img src="../assets/SolutionImg2.png" alt="">
                 <figcaption>
@@ -38,11 +38,11 @@
                 <div class="solutions_item_secondpart_textarea">
                     <p>Nous nous occupons de faire ou de refaire votre <strong>référencement</strong> naturel , texte SEO, stratégie de netlinking… </p>
                     <p>Le but est plus simple que les technologies utilisées : faire apparaître votre site parmi les <strong>premiers liens</strong> proposés par les moteurs de recherche.  Cette prestation permet une augmentation drastique du trafic web.</p>
-                    <a href=""><font-awesome-icon :icon="['fas', 'arrow-down-right']" />PLUS D'INFOS</a>
+                    <a href="/prices/#seo"><font-awesome-icon icon="fa-solid fa-arrow-down" /> PLUS D'INFOS</a>
                 </div>
             </div>
         </section>
-        <section class="solutions_item">
+        <section class="solutions_item" id="leads">
             <figure class="solutions_item_firstpart">
                 <img src="../assets/SolutionImg3.png" alt="">
                 <figcaption>
@@ -56,11 +56,11 @@
                 <div class="solutions_item_secondpart_textarea">
                     <p>Nous discutons avec vous afin de <strong>déterminer la cible</strong> de la campagne de génération de leads ainsi que la nature de votre offre. Les <strong>contacts</strong> vous sont rapidement transmis après leur génération afin de maximiser le taux de conversion.</p>
                     <p>Génération de <strong>prospects</strong> via les réseaux sociaux et les moteurs de recherches.</p>
-                    <a href=""><font-awesome-icon :icon="['fas', 'arrow-down-right']" />PLUS D'INFOS</a>
+                    <a href="/prices/#leads"><font-awesome-icon icon="fa-solid fa-arrow-down" /> PLUS D'INFOS</a>
                 </div>
             </div>
         </section>
-        <section class="solutions_item">
+        <section class="solutions_item" id="cm">
             <figure class="solutions_item_firstpart">
                 <img src="../assets/SolutionImg4.png" alt="">
                 <figcaption>
@@ -77,7 +77,7 @@
                     <p>Notre rôle sera alors d’assurer votre présence, votre visibilité, votre notoriété et votre image sur les réseaux. Il s’agit de faire <strong>grandir votre communauté</strong> et son intérêt pour vos produits et/ou services afin de booster vos ventes.</p>
                     <p>Ce contenu travaillé par nos soins pourra être envoyé à de 
                     nombreux clients potentiels afin de leur faire connaître votre activité et d’augmenter vos volumes de vente.</p>
-                    <a href=""><font-awesome-icon :icon="['fas', 'arrow-down-right']" />PLUS D'INFOS</a>
+                    <a href="/prices/#cm"><font-awesome-icon icon="fa-solid fa-arrow-down" /> PLUS D'INFOS</a>
                 </div>
             </div>
             <div class="lavender-button">
@@ -174,21 +174,20 @@
     line-height: 24px;
     transition: color 700ms;
 }
-.solutions_item_secondpart_textarea a::before {
-    content: " V ";
-    display: inline-block;
-    padding-right: 10px;
-    transform: rotate(0deg);
-    transition: transform 700ms;
+.solutions_item_secondpart_textarea a svg {
+    width: 17px;
+    height: 17px;
+    transform-origin: 7px 11px;
+    transform: rotate(-45deg);
+    transition: transform 500ms 100ms;
 }
 .solutions_item_secondpart_textarea a:hover {
     color: #9EAAFF;
-    transition: all 700ms ease;
+    transition: all 500ms 100ms;
 }
-.solutions_item_secondpart_textarea a:hover:before {
-    transform-origin: 7px 11px;
+.solutions_item_secondpart_textarea a:hover svg {
     transform: rotate(-90deg);
-    transition: all 700ms;
+    transition: all 500ms 100ms;
 } 
 .solutions_item h2 {
     padding: 0 15% 0 10%;
