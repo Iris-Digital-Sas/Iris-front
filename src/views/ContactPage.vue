@@ -44,7 +44,7 @@
     width: 40%;
     background-color: #1F1F30;
     left: 110px;
-    bottom: 370px;
+    bottom: 270px;
 }
 .section-contact-form-bloc {
     z-index: 1;
