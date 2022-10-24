@@ -21,6 +21,7 @@
                     <li>Autres cms et scripts</li>
                 </ul>
             </div>
+        </div>
         </section>
         <section class="prices" id="seo">
             <h1>NOS TARIFS SEO</h1>
@@ -125,7 +126,6 @@
                     <a href="" class="formula-look lavender-text">voir plus</a>
                 </div>
             </div>
-        </div>
     </section>
     <section class="prices" id="seo">
         <h1>NOS TARIFS SEO</h1>
