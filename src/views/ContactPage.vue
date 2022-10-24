@@ -102,7 +102,7 @@
     display: block;
     position: relative;
     top: 231px;
-    right: 325px;
+    right: 345px;
     color: white;
     border: 0;
     display: flex;

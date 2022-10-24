@@ -37,7 +37,6 @@ body {
 #container main {
   min-height: 100%;
   position: relative;
-  padding-bottom: 100px;
 }
 li {
   list-style: none;
