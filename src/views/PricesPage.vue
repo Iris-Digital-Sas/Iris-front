@@ -2,7 +2,7 @@
     <section class="bgc-dark-blue title-prices">
         <h1>découvrez les différentes <span class="lavender-text">formules</span> d'iris</h1>
     </section>
-    <section class="prices" id="wm">
+    <section class="prices" id="wd">
         <div class="prices_info bgc-dark-blue">Retrouvez le symbole <img class="ai-icon-spoiler" src="../assets/AI-original.png" alt="">  pour les solutions intégrant de l'IA</div>
         <h1>NOS TARIFS DE CONCEPTION DE SITE WEB</h1>
         <span>Sélectionnez l'une de nos <span class="lavender-text">3 formules</span></span>
