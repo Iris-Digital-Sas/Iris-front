@@ -45,8 +45,12 @@ li {
 a {
   text-decoration: none;
 }
-body {
-  margin: 0;
+input::placeholder, textarea::placeholder {
+  color: #9EAAFF;
+  opacity: 1;
+}
+textarea {
+  resize: none;
 }
 .bgc-dark-blue {
   background-color: #14142C;

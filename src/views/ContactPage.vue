@@ -12,7 +12,7 @@
                     <textarea name="" id="" cols="30" rows="10" placeholder="Quelques mots ?"></textarea>
                     <input id="contact-button" type="submit" value="ENVOYER">
                     <div id="fa-button">
-                        <span>V</span>
+                        <font-awesome-icon icon="fa-solid fa-arrow-down" />
                     </div>                    
                 </form>
             </div>            
@@ -102,24 +102,29 @@
     display: block;
     position: relative;
     top: 231px;
-    right: 345px;
+    right: 325px;
     color: white;
     border: 0;
     display: flex;
     align-items: center;
     padding-left: 15px;
 }
-#fa-button span {
+#fa-button svg {
     position: absolute;
     width: 20px;
     border: 0;
-    color: white;
     font-size: 25px;
-}
-#fa-button:hover span {
     transform-origin: 30px 10px;
+    transform: rotate(-45deg);
+    transition: transform 500ms 150ms;
+}
+#fa-button svg path {
+    fill: white;
+}
+#fa-button:hover svg {
+    
     transform: rotate(-90deg);
-    transition: transform 500ms;
+    transition: transform 500ms 150ms;
 }
 
 </style>
