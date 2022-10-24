@@ -6,7 +6,7 @@
         </div>        
     </section>
     <div class="bgc-dark-blue solutions">
-        <section class="solutions_item" id="solution_webdesign">
+        <section class="solutions_item" id="wd">
             <figure class="solutions_item_firstpart">
                 <img src="../assets/SolutionImg1.png" alt="">
                 <figcaption>
@@ -21,11 +21,11 @@
                     <p>Nous réalisons vos sites <strong>vitrines</strong> et <strong>e-commerces</strong> avec différentes technologies, en discutant avec vous pour trouver la réponse la plus adaptée à vos besoins et à votre budget.</p>
                     <p>Votre site sera <strong>optimisé</strong> pour un affichage sur ordinateur, mais également sur téléphone, tablette et autres supports.</p>
                     <p>Nous vous fournissons un site <strong>favorisé par l’algorithme</strong> de Google, afin que vos clients potentiels le trouvent facilement lors de leurs recherches.</p>
-                    <a href="/prices/#wm"><font-awesome-icon icon="fa-solid fa-arrow-down" /> PLUS D'INFOS</a>
+                    <a href="/prices/#wd"><font-awesome-icon icon="fa-solid fa-arrow-down" /> PLUS D'INFOS</a>
                 </div>
             </div>
         </section>
-        <section class="solutions_item" id="solution_seo">
+        <section class="solutions_item" id="seo">
             <figure class="solutions_item_firstpart">
                 <img src="../assets/SolutionImg2.png" alt="">
                 <figcaption>
@@ -42,7 +42,7 @@
                 </div>
             </div>
         </section>
-        <section class="solutions_item" id="solution_leads">
+        <section class="solutions_item" id="leads">
             <figure class="solutions_item_firstpart">
                 <img src="../assets/SolutionImg3.png" alt="">
                 <figcaption>
@@ -60,7 +60,7 @@
                 </div>
             </div>
         </section>
-        <section class="solutions_item" id="solution_cm">
+        <section class="solutions_item" id="cm">
             <figure class="solutions_item_firstpart">
                 <img src="../assets/SolutionImg4.png" alt="">
                 <figcaption>
