@@ -1,6 +1,6 @@
 <template>
     <section class="bgc-dark-blue introducing">
-        <p class="introducing_text"><span class="introducing_text-iris">IRIS</span> c'est l'histoire de 4 passionées du Web qui ont décidé d'en faire leur <br>métier. C'est ainsi que Geoffrey, Amaury, Hugo et Sofian se sont associés<br> au cours de l'été 2021 afin de donner vie à un objectif commun :<strong class="introducing_text-strong">Permettre<br> aux entrepreneurs de se digitaliser et de maitriser leur image sur le web.</strong>
+        <p class="introducing_text"><span class="introducing_text-iris">IRIS</span> c'est l'histoire de 4 passionées du Web qui ont décidé d'en faire leur <br>métier. C'est ainsi que Geoffrey, Amaury, Hugo et Sofian se sont associés<br> au cours de l'été 2021 afin de donner vie à un objectif commun : <strong class="introducing_text-strong">Permettre<br> aux entrepreneurs de se digitaliser et de maitriser leur image sur le web.</strong>
         </p>
     </section>
     <section class="team">

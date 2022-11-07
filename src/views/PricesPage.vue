@@ -257,7 +257,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: rgba(0,0,0,0);
     padding: 0px;
     border-radius: 50px 50px 50px 50px ;
     font-weight: 500;
