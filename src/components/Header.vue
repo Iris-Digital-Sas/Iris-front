@@ -9,13 +9,23 @@
         <li><router-link to="/prices">NOS TARIFS</router-link></li>
         <li><router-link to="/contact">CONTACT</router-link></li>
       </ul>
+      <Slide>
+        <a id="home" href="#">
+          <span>Home</span>
+        </a>
+      </Slide>
     </nav>
   </header>
 </template>
 
 <script>
+import { Slide } from 'vue-burger-menu'  
+
 export default {
-  name: "Header_comp"
+  name: "Header_comp",
+  components: {
+        Slide,
+  }
 }
 </script>
 
