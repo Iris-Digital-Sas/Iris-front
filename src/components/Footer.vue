@@ -32,4 +32,18 @@ footer a {
   color: black;
 }
 
+@media screen and (max-width: 600px) {
+  footer {
+        margin: 25px 30px;
+        flex-direction: column-reverse;
+        border-bottom: 0;
+  }
+  footer a {
+      text-align: center ;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-bottom: 1px black solid;
+  }
+}
+
 </style>

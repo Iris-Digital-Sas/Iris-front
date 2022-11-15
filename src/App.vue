@@ -1,6 +1,6 @@
 <template>
   <Header_comp />
-  <div id="container">
+  <div id="page-wrap">
     <main>
       <router-view />
     </main>    
@@ -31,10 +31,10 @@ body {
   margin: 0;
   width: 100%;
 }
-#container {
+#page-wrap {
   height: 100%;
 }
-#container main {
+#page-wrap main {
   min-height: 100%;
   position: relative;
 }

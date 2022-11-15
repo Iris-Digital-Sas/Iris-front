@@ -9,17 +9,23 @@
         <li><router-link to="/prices">NOS TARIFS</router-link></li>
         <li><router-link to="/contact">CONTACT</router-link></li>
       </ul>
-      <Slide>
-        <a id="home" href="#">
-          <span>Home</span>
-        </a>
-      </Slide>
     </nav>
+    <div>
+      <Slide closeOnNavigation="true" right id="slide">
+        <ul class="slide-nav-list">
+          <li><router-link to="/solutions">NOS SOLUTIONS</router-link></li>
+          <li><router-link to="/team">L'EQUIPE</router-link></li>
+          <li><router-link to="/achievements">REALISATIONS</router-link></li>
+          <li><router-link to="/prices">NOS TARIFS</router-link></li>
+          <li><router-link to="/contact">CONTACT</router-link></li>
+        </ul>
+    </Slide>
+    </div>    
   </header>
 </template>
 
 <script>
-import { Slide } from 'vue-burger-menu'  
+import { Slide } from 'vue3-burger-menu'  
 
 export default {
   name: "Header_comp",
@@ -58,6 +64,52 @@ export default {
 .header-nav-list a:hover {
   color: #9EAAFF;
 }
+#slide{
+  display: none;
+}
+.bm-menu {
+  background-color: rgb(20, 20, 44);
+  padding-top: 90px;
+  height: 35%;
+}
+.bm-item-list {
+  height: 100%;
+  padding: 0;
+}
+.bm-burger-button {
+  left: 350px;
+  top: 30px;
+}
+.bm-burger-button > * {
+  background-color: white;
+}
+.bm-cross-button, .bm-burger-button {
+  top: 30px;
+  left: 75%;
+}
+.slide-nav-list {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.slide-nav-list a {
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+}
+.slide-nav-list a:hover {
+  color: #9EAAFF;
+}
 
-
+@media screen and ( max-width: 600px) {
+  .header-nav {
+    display: none;
+  }
+  #slide {
+    display: contents;
+  }
+}
 </style>
