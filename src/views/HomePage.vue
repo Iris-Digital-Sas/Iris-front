@@ -305,7 +305,7 @@
 }
 @media screen and ( max-width: 600px) { 
     .origin-section {
-        height: 400px;
+        height: 600px;
         background-size: cover;
         background-position: center;
     }
@@ -354,6 +354,15 @@
     }
     .home-solutions figure:nth-child(-n+3)  figcaption p {
         margin-top: 45px;
+    }
+    .home-solutions .lavender-box {
+        width: 80%;
+        height: 85px;
+    }
+    .home-solutions .lavender-box a {
+        padding: 5% 5%;
+        font-size: 20px;
+        line-height: 30px;
     }
     .home-realisations {
         flex-direction: column;
