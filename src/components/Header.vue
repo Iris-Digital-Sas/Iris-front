@@ -122,7 +122,7 @@ export default {
   transform: rotate(-405deg);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .menu-button-container {
     display: flex;
   }
@@ -164,14 +164,16 @@ export default {
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
-}
-
-@media screen and ( max-width: 600px) {
   .header-nav {
     display: none;
   }
-  #slide {
+  #slide{
     display: contents;
+  }
+}
+@media (min-width: 1000px) {
+  .menu {
+      display: none;
   }
 }
 </style>
