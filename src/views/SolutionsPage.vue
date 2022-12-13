@@ -94,8 +94,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:220px;
-    padding-left: 70px;
+    gap: 100px;
 }
 .solution_intro-title {
     letter-spacing: -2px;
@@ -206,7 +205,8 @@
     height: 170px;
 }
 .solutions_item:nth-child(1) .solutions_item_secondpart {
-    margin: 31% 15% 0 0;
+    margin-right: 15%;
+    margin-top: 500px;
     padding-bottom: 500px;
 }
 /* 2° élément */
@@ -221,7 +221,8 @@
     padding: 3%;
 }
 .solutions_item:nth-child(2) .solutions_item_secondpart {
-    margin: 41% 0 0 8%;
+    margin-top: 700px;
+    margin-left: 8%;
 }
 /* éléments  pairs */
 .solutions_item:nth-child(2n) img {
@@ -232,9 +233,6 @@
 }
 .solutions_item:nth-child(2n) h2::after {
     margin: 0 109% 0 -129%
-}
-.solutions_item:nth-child(2n) .solutions_item_secondpart {
-    flex-direction: row-reverse;
 }
 .solutions_item:nth-child(2n) .solutions_item_secondpart_textarea {
     flex-basis: 30%;
@@ -253,7 +251,8 @@
     padding: 2.5%;
 }
 .solutions_item:nth-child(3n) .solutions_item_secondpart {
-    margin: 31.5% 0% 0 3%;
+    margin-top: 500px;
+    margin-left: 3%;
 }
 .solutions_item:nth-child(3n) h2 {
     padding:0 7% 0 10%;
@@ -280,7 +279,7 @@
     padding: 2% 2.5%;
 }
 .solutions_item:nth-child(4n) .solutions_item_secondpart {
-    margin: 23.5% 0% 0 0%;
+    margin-top: 500px;
 }
 .solutions_item:nth-child(4n) .solutions_item_secondpart h2 {
     padding: 0 0 0 17%; 
@@ -305,6 +304,130 @@
     text-align: center;
     background-color: #0000;
     border: 0;
+}
+@media (max-width: 1363px) {
+    .solutions_item:nth-child(3n) img {
+        right: 0px;
+    }
+}
+@media (max-width: 1000px) {
+    .solution_intro {
+        height: 700px;
+    }
+    .solutions_item:nth-child(1) figcaption, .solutions_item:nth-child(2) figcaption, .solutions_item:nth-child(3) figcaption, .solutions_item:nth-child(4) figcaption{
+        top: 50px;
+    }
+}
+@media (max-width: 950px) {
+    .solutions_item:nth-child(n) img{
+        width: 100%;
+    }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+    #cm {
+        height: 1700px;
+    }
+}
+@media (max-width: 790px) {
+    #cm {
+        height: 1600px;
+    }
+}
+@media (max-width: 690px) {
+    .solutions_item:nth-child(3n) figcaption {
+        right: 50px;
+    }
+}
+@media (max-width: 500px) {
+    .solution_intro {
+        height: 500px;
+    }
+    .solution_intro h1{
+        font-size: 140%;
+        line-height: 135%;
+        font-weight: 500;
+        padding: 150px 0% 0% 0%;
+    }
+    .solutions_item_secondpart {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5px;
+        gap: 15px;
+    }
+    .solutions_item_secondpart > *{
+        width: 70%;
+    }
+    .solutions_item_secondpart h2 {
+        text-align: center;
+    }
+    .solutions_item:nth-child(n) .solutions_item_secondpart h2 {
+        padding: 0;
+    }
+    .solutions_item:nth-child(n) .solutions_item_secondpart h2::after {
+        margin: 30px 0 30px 0;
+    }
+    .solutions_item:nth-child(2) .solutions_item_secondpart, .solutions_item:nth-child(3) .solutions_item_secondpart  {
+        margin-left: 0;
+    }
+    .solutions_item:nth-child(1) .solutions_item_secondpart {
+        margin-right: 0;
+    }
+}
+@media (max-width: 480px) {
+    .solutions_item{
+        height: 775px;
+    }
+    .solution_intro{
+        height: 350px;
+        gap: 50px;
+    }
+    .solution_intro h1 {
+        padding: 100px 0 0;
+    }
+    .solution_intro-button {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 15px;
+        width: 50%;
+        height: 50px;
+    }
+    
+    #cm {
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .solutions_item_firstpart {
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top:0px;
+
+    }
+    .solutions_item:nth-child(n) img {
+        height: 270px;
+        position: initial;
+    }
+    .solutions_item:nth-child(n) figcaption {
+        display: none;
+    }
+    .solutions_item:nth-child(n) .solutions_item_secondpart {
+        margin-top: 30px;
+    }
+    .solutions_item .lavender-button {
+        margin: 50px 0;
+        padding: 0;
+        width: 40%;
+        height: 50px;
+    }
+    .solutions_item .lavender-button-text {
+        top:10px;
+        left: 5px;
+        font-size: 17px;
+        width: 100%;
+    }
+
 }
 
 </style>
