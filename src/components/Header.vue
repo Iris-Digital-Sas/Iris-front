@@ -123,6 +123,9 @@ export default {
 }
 
 @media (max-width: 1000px) {
+  .header {
+    background-color: rgba(20, 20, 44, 1);;
+  }
   .menu-button-container {
     display: flex;
   }
@@ -156,10 +159,11 @@ export default {
     padding: 0.5em 0;
     width: 100%;
     color: white;
-    background-color: rgba(20, 20, 44, 1);;
+    background-color: rgba(20, 20, 44, 1);
   }
   .menu > li a{
     color: white;
+    align-self: center;
   }
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
