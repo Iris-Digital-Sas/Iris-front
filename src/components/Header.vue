@@ -10,16 +10,16 @@
         <li><router-link to="/contact">CONTACT</router-link></li>
       </ul>
     </nav>
-    <input id="menu-toggle" type="checkbox" />
-    <label class='menu-button-container' for="menu-toggle">
-    <div class='menu-button'></div>
-  </label>
-    <ul class="menu">
+    <input v-if="!isOpen" @click="isOpen=true"  id="menu-toggle" type="checkbox" >
+    <label class='menu-button-container' for="menu-toggle" :isOpen="isOpen" @closeMenu="isOpen = false">
+      <div class='menu-button'></div>
+    </label >
+    <ul class="menu" >
       <li><router-link to="/solutions">NOS SOLUTIONS</router-link></li>
-        <li><router-link to="/team">L'EQUIPE</router-link></li>
-        <li><router-link to="/achievements">REALISATIONS</router-link></li>
-        <li><router-link to="/prices">NOS TARIFS</router-link></li>
-        <li><router-link to="/contact">CONTACT</router-link></li>
+      <li><router-link to="/team">L'EQUIPE</router-link></li>
+      <li><router-link to="/achievements">REALISATIONS</router-link></li>
+      <li><router-link to="/prices">NOS TARIFS</router-link></li>
+      <li><router-link to="/contact">CONTACT</router-link></li>
     </ul>   
   </header>
 </template>
