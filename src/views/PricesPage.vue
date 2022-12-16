@@ -350,5 +350,34 @@
 #most-popular {
     left: -70px;
 }
+@media (max-width: 500px) {
+    .title-prices {
+        height: 750px;
+    }
+    .title-prices h1{
+        width: 100%;
+        font-size: 100%;
+        text-align: center;
+    }
+    .prices_info {
+        width: 100%;
+        right: -5px;
+        top: 670px;
+    }
+    .prices h1 {
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .prices > span {
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 33px;
+    }
+    .prices > span::after, .prices:last-child h1::after {
+        width: 100%;
+        position: initial;
+        padding-top: 1%;
+    }
+}
 
 </style>
