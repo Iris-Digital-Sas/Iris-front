@@ -161,5 +161,10 @@ section {
   transform: translateX(350px);
   transition: transform 500ms;
 }  
+@media (max-width: 500px) {
+    br {
+        display: none;
+    }
+}
 
  </style>

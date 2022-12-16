@@ -356,11 +356,11 @@
         margin-top: 45px;
     }
     .home-solutions .lavender-box {
-        width: 80%;
-        height: 85px;
+        width: 60%;
+        height: 60px;
     }
     .home-solutions .lavender-box a {
-        padding: 5% 5%;
+        padding: 15px 5px;
         font-size: 20px;
         line-height: 30px;
     }
@@ -382,6 +382,7 @@
     }
     .home-realisations div .lavender-button {
         align-self: center;
+        margin: 40px 0;
     }
     .home-annonce {
         height: 500px;
@@ -405,6 +406,14 @@
         bottom: 0;
         right: 0;
         padding: 20px 50px
+    }
+}
+@media (max-width: 420px) {
+    .home-solutions .lavender-box {
+        width: 75%;
+    }
+    .home-solutions .lavender-box a {
+        padding: 15px 0;
     }
 }
 </style>

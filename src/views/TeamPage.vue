@@ -89,7 +89,6 @@
                 </figure>
             </slide>
             <template #addons>
-                <navigation />
                 <pagination />
             </template>
         </Carousel>
@@ -98,14 +97,13 @@
 
 <script>
 import 'vue3-carousel/dist/carousel.css'
-import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
+import { Carousel, Slide, Pagination } from 'vue3-carousel'
 
 export default {
   components: {
     Carousel,
     Slide,
-    Pagination,
-    Navigation,
+    Pagination
   },
 }
 </script>
@@ -137,7 +135,7 @@ export default {
     font-weight: 600;
 }
 .team {
-    padding: 10% 3.5% 0 8.5%;
+    padding: 10% 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -199,12 +197,15 @@ export default {
 }
 
 @media (max-width: 1000px) {
+    .team {
+        height: 700px;
+    }
     .team_members {
         display: none;
     }
     .carousel {
         display: initial;
-        width: 400px;
+        width: 100%;
         height: 450px;
         align-self: center;
     }

@@ -324,12 +324,12 @@
     }
 }
 @media (min-width: 500px) and (max-width: 600px) {
-    #cm {
+    .solutions #cm {
         height: 1700px;
     }
 }
 @media (max-width: 790px) {
-    #cm {
+    .solutions #cm {
         height: 1600px;
     }
 }
@@ -372,8 +372,6 @@
     .solutions_item:nth-child(1) .solutions_item_secondpart {
         margin-right: 0;
     }
-}
-@media (max-width: 480px) {
     .solutions_item{
         height: 775px;
     }
@@ -392,7 +390,7 @@
         height: 50px;
     }
     
-    #cm {
+    .solutions #cm {
         height: 1200px;
         display: flex;
         flex-direction: column;
@@ -416,14 +414,15 @@
         margin-top: 30px;
     }
     .solutions_item .lavender-button {
-        margin: 50px 0;
+        margin: 10% 0 0;
         padding: 0;
         width: 40%;
         height: 50px;
+        display: flex;
+        align-items: center;
     }
     .solutions_item .lavender-button-text {
-        top:10px;
-        left: 5px;
+        position: initial;
         font-size: 17px;
         width: 100%;
     }
