@@ -53,7 +53,9 @@
         </div>
     </section>
     <section class="bgc-grey home-annonce">
-        <p><span class="lavender-text">IRIS</span> permet aux entrepreneurs de se digitaliser et de maîtriser leur image sur le web.</p>
+        <div>
+            <p><span class="lavender-text">IRIS</span> permet aux entrepreneurs de se digitaliser et de maîtriser leur image sur le web.</p>
+        </div>        
     </section>
     <section class="bgc-dark-blue home-contact">
         <div class="home-contact-bloc">
@@ -203,9 +205,17 @@
     justify-content: center;
     align-items: center;
 }
-.home-annonce p {
-    flex-basis: 40%;
+.home-annonce div {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-annonce div p { 
     font-style: italic;
+    width: 80%;
     font-weight: 300;
     font-size: 30px;
     line-height: 45px;
@@ -292,5 +302,118 @@
 }
 .home-contact-bloc .lavender-box:hover .lavender-box-text {
     color: #9EAAFF;
+}
+@media screen and ( max-width: 600px) { 
+    .origin-section {
+        height: 600px;
+        background-size: cover;
+        background-position: center;
+    }
+    .origin-section div {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 80px 20px;
+        height: 80%;
+        gap: 80px;
+    }
+    .origin-section div p {
+        text-align: center;
+        flex-basis: 20%;
+        font-size: 25px;
+        line-height: 40px;
+    }
+    .origin-section div a {
+        display: none;
+    }
+    #begining {
+        height: 1700px;
+    }
+    .home-solutions h1, .home-solutions span {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .home-solutions div {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    .home-solutions figure {
+        margin: 0 7.5%;
+        width: 85%;
+        flex-basis: 20%;
+        justify-content: flex-start;
+    }
+    .home-solutions figure img {
+        margin-top: 5%;
+        width: 50px;
+        height: 50px;
+    }
+    .home-solutions figcaption>* {
+        margin: 0;
+    }
+    .home-solutions figure:nth-child(-n+3)  figcaption p {
+        margin-top: 45px;
+    }
+    .home-solutions .lavender-box {
+        width: 60%;
+        height: 60px;
+    }
+    .home-solutions .lavender-box a {
+        padding: 15px 5px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .home-realisations {
+        flex-direction: column;
+    }
+    .home-realisations img {
+        flex-basis: 30%;
+    }
+    .home-realisations .bgc-dark-blue {
+        padding: 5%;
+        flex-basis: 70%;
+        justify-content: space-around;
+    }
+    .home-realisations div h1, .home-realisations div p {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+    .home-realisations div .lavender-button {
+        align-self: center;
+        margin: 40px 0;
+    }
+    .home-annonce {
+        height: 500px;
+    }
+    .home-contact-bloc {
+        flex-direction: column;
+        height: 90%;
+        padding: 8% 10%;
+        justify-content: center;
+        gap: 50px;
+    }
+    .home-contact-bloc form {
+        align-items: center;
+        align-self: center;
+    }
+    .home-contact-bloc form > :nth-child(-n+3) {
+        width: 100%;
+    }
+    .home-contact-bloc form > :last-child {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        padding: 20px 50px
+    }
+}
+@media (max-width: 420px) {
+    .home-solutions .lavender-box {
+        width: 75%;
+    }
+    .home-solutions .lavender-box a {
+        padding: 15px 0;
+    }
 }
 </style>

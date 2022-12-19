@@ -1,6 +1,6 @@
 <template>
     <section class="bgc-dark-blue introducing">
-        <p class="introducing_text"><span class="introducing_text-iris">IRIS</span> c'est l'histoire de 4 passionées du Web qui ont décidé d'en faire leur <br>métier. C'est ainsi que Geoffrey, Amaury, Hugo et Sofian se sont associés<br> au cours de l'été 2021 afin de donner vie à un objectif commun : <strong class="introducing_text-strong">Permettre<br> aux entrepreneurs de se digitaliser et de maitriser leur image sur le web.</strong>
+        <p class="introducing_text"><span class="introducing_text-iris">IRIS</span> est composée de 5 jeunes collaborateurs aux domaines d'expertises complémentaires qui nous permet de d'aborder une vaste partie des solutions à proposer aux entreprises pour les accompagner dans leurs projets web.
         </p>
     </section>
     <section class="team">
@@ -42,21 +42,82 @@
                 </figcaption>                
             </figure>
         </div>
+        <Carousel id="team_carousel">
+            <slide :key="slide">
+                <figure>
+                    <img src="../assets/persona.jpg" alt="">
+                    <figcaption>
+                        <strong>Geoffrey</strong>
+                        <span>Architecte Logiciel</span>
+                    </figcaption>                
+                </figure>
+            </slide>
+            <slide :key="slide">
+                <figure>
+                    <img src="../assets/persona.jpg" alt="">
+                    <figcaption>
+                        <strong>Amaury</strong>
+                        <span>Marketing Digital</span>
+                    </figcaption>                
+                </figure>
+            </slide>
+            <slide :key="slide">
+                <figure>
+                    <img src="../assets/persona.jpg" alt="">
+                    <figcaption>
+                        <strong>Hugo</strong>
+                        <span>Ingénieur Intelligence Artificielle et Ingénierie logiciel</span>
+                    </figcaption>                
+                </figure>
+            </slide>
+            <slide :key="slide">
+                <figure>
+                    <img src="../assets/persona.jpg" alt="">
+                    <figcaption>
+                        <strong>Sofian</strong>
+                        <span>Marketing Digital</span>
+                    </figcaption>                
+                </figure>
+            </slide>
+            <slide :key="slide">
+                <figure>
+                    <img src="../assets/persona.jpg" alt="">
+                    <figcaption>
+                        <strong>Marie</strong>
+                        <span>Graphiste</span>
+                    </figcaption>                
+                </figure>
+            </slide>
+            <template #addons>
+                <pagination />
+            </template>
+        </Carousel>
     </section>
 </template>
 
+<script>
+import 'vue3-carousel/dist/carousel.css'
+import { Carousel, Slide, Pagination } from 'vue3-carousel'
+
+export default {
+  components: {
+    Carousel,
+    Slide,
+    Pagination
+  },
+}
+</script>
 <style>
 .introducing {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.introducing_text{
+.introducing_text{  
     margin: 0;
     text-align: center;
     width: 50%;
     font-size: 22px;
-    font-weight: 300;
     line-height: 33px;
 }
 .introducing_text::after {
@@ -74,7 +135,7 @@
     font-weight: 600;
 }
 .team {
-    padding: 10% 3.5% 0 8.5%;
+    padding: 10% 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -131,5 +192,58 @@
     color: white;
     transition:  opacity 500ms ease, background-color 500ms ease;
 }
+.carousel{
+    display: none;
+}
 
+@media (max-width: 1000px) {
+    .team {
+        height: 700px;
+    }
+    .team_members {
+        display: none;
+    }
+    .carousel {
+        display: initial;
+        width: 100%;
+        height: 450px;
+        align-self: center;
+    }
+    .carousel__pagination {
+        padding: 0;
+    }
+    .carousel figure {
+        margin: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .carousel img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+    .carousel figcaption {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 300px;
+        height: 100px;
+        gap: 15px;
+    }
+    .carousel figcaption strong {
+        display: block;
+        border-bottom: 1.5px grey dashed;
+        padding-bottom: 25px;
+    }
+}
+@media( max-width: 599px) {
+    .introducing_text{  
+        width: 80%;
+    }
+    .introducing_text::after {
+        width: 90%;
+        margin: 5%;
+    }
+}
 </style>

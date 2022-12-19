@@ -10,8 +10,9 @@
                     <input type="email" placeholder="Email*" required>
                     <input type="tel" placeholder="Téléphone">
                     <textarea name="" id="" cols="30" rows="10" placeholder="Quelques mots ?"></textarea>
-                    <input id="contact-button" type="submit" value="ENVOYER">
                     <div id="fa-button">
+                    <input id="contact-button" type="submit" value="ENVOYER">
+                    
                         <font-awesome-icon icon="fa-solid fa-arrow-down" />
                     </div>                    
                 </form>
@@ -101,8 +102,6 @@
     height: 59px;
     display: block;
     position: relative;
-    top: 231px;
-    right: 345px;
     color: white;
     border: 0;
     display: flex;
@@ -111,6 +110,7 @@
 }
 #fa-button svg {
     position: absolute;
+    left: 25px;
     width: 20px;
     border: 0;
     font-size: 25px;
@@ -125,6 +125,45 @@
     
     transform: rotate(-90deg);
     transition: transform 500ms 150ms;
+}
+
+@media (max-width: 500px) {
+    .section-contact{
+        width: 100%;
+        padding: 17% 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-contact-form_title {
+        padding: 40px;
+        text-align: center;
+        font-size: 165%;
+    }
+    .section-contact_img{
+        left: 0px;
+        bottom: 215px;
+        width: 100%;
+    }
+    .section-contact-form {
+        width: 100%;
+        height: 700px;
+        padding-left: 0;
+        border-left: 0;
+        flex-wrap: nowrap;
+        gap: 40px;
+    }
+    .section-contact-form :nth-child(-n+5) {
+        width: 90%;
+        line-height: 40px;
+    }
+    .section-contact-form textarea {
+        margin-top: 150px;
+        height: 200px;
+    }
+    #fa-button {
+        align-self: center;
+    }
 }
 
 </style>
