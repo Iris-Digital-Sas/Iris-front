@@ -10,24 +10,31 @@
         <li><router-link to="/contact">CONTACT</router-link></li>
       </ul>
     </nav>
-    <input v-if="!isOpen" @click="isOpen=true"  id="menu-toggle" type="checkbox" >
-    <label class='menu-button-container' for="menu-toggle" :isOpen="isOpen" @closeMenu="isOpen = false">
-      <div class='menu-button'></div>
-    </label >
-    <ul class="menu" >
-      <li><router-link to="/solutions">NOS SOLUTIONS</router-link></li>
-      <li><router-link to="/team">L'EQUIPE</router-link></li>
-      <li><router-link to="/achievements">REALISATIONS</router-link></li>
-      <li><router-link to="/prices">NOS TARIFS</router-link></li>
-      <li><router-link to="/contact">CONTACT</router-link></li>
-    </ul>   
+    <Slide :closeOnNavigation="true">
+      <ul class="menu" >
+        <li><router-link to="/solutions">NOS SOLUTIONS</router-link></li>
+        <li><router-link to="/team">L'EQUIPE</router-link></li>
+        <li><router-link to="/achievements">REALISATIONS</router-link></li>
+        <li><router-link to="/prices">NOS TARIFS</router-link></li>
+        <li><router-link to="/contact">CONTACT</router-link></li>
+      </ul>
+    </Slide>
   </header>
 </template>
 
 <script>
+import { Slide } from 'vue3-burger-menu'  // import the CSS transitions you wish to use, in this case we are using `Slide`
 
 export default {
-  name: "Header_comp"
+  name: "Header_comp",
+  components: {
+        Slide // Register your component
+    },
+    data() {
+      return {
+        isOpen: false
+      }
+    }
 }
 </script>
 
@@ -60,84 +67,54 @@ export default {
 .header-nav-list a:hover {
   color: #9EAAFF;
 }
-.menu {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.bm-burger-button span {
+  background-color: white;
 }
-.menu > li {
-  margin: 0 1rem;
-  overflow: hidden;
+.bm-cross-button{
+  height: 50px;
+  width: 50px;
 }
-
-.menu-button-container {
-  display: none;
-  height: 100%;
-  width: 30px;
-  cursor: pointer;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.cross-style {
+  top: 20px;
+  right: 175px;
 }
-
-#menu-toggle {
-  display: none;
-}
-
-.menu-button,
-.menu-button::before,
-.menu-button::after {
-  display: block;
-  background-color: #fff;
-  position: absolute;
-  height: 4px;
-  width: 30px;
-  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  border-radius: 2px;
-}
-
-.menu-button::before {
-  content: '';
-  margin-top: -8px;
-}
-
-.menu-button::after {
-  content: '';
-  margin-top: 8px;
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button::before {
-  margin-top: 0px;
-  transform: rotate(405deg);
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button {
-  background: rgba(255, 255, 255, 0);
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button::after {
-  margin-top: 0px;
-  transform: rotate(-405deg);
+.bm-cross-button .bm-cross {
+  width: 5px !important; 
+  height: 40px !important;
 }
 
 @media (max-width: 1000px) {
   .header {
-    background-color: rgba(20, 20, 44, 1);;
+    background-color: rgba(20, 20, 44, 1);
+    flex-direction: row-reverse;
+    padding: 0;
+    width: 100%;
   }
   .menu-button-container {
     display: flex;
   }
+  .bm-menu {
+    height: 28.5%;
+    padding-top: 75px;
+    background-color: rgba(20, 20, 44, 1);
+  }
+  .bm-burger-button {
+    position: absolute;
+    width: 40px;
+    left: 50px;
+    top: 25px;
+  }
   .menu {
+    padding: 0;
     position: absolute;
     top: 0;
-    margin-top: 77px;
+    margin-top: 75px;
     left: 0;
-    flex-direction: column;
     width: 100%;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
   }
   #menu-toggle ~ .menu li {
     height: 0;
@@ -176,8 +153,9 @@ export default {
   }
 }
 @media (min-width: 1000px) {
-  .menu {
+  .menu, header > div  {
       display: none;
   }
+  
 }
 </style>
