@@ -41,6 +41,20 @@
                     <span>Graphiste</span>
                 </figcaption>                
             </figure>
+            <figure>
+                <img src="../assets/persona.jpg" alt="">
+                <figcaption>
+                    <strong>Enzo</strong>
+                    <span>Web designer et Expert SEO</span>
+                </figcaption>                
+            </figure>
+            <figure>
+                <img src="../assets/persona.jpg" alt="">
+                <figcaption>
+                    <strong>Bastian</strong>
+                    <span>Dévellopeur Full-Stack</span>
+                </figcaption>                
+            </figure>
         </div>
         <Carousel id="team_carousel">
             <slide :key="slide">
@@ -88,6 +102,24 @@
                     </figcaption>                
                 </figure>
             </slide>
+            <slide :key="slide">
+                <figure>
+                    <img src="../assets/persona.jpg" alt="">
+                    <figcaption>
+                        <strong>Enzo</strong>
+                        <span>Web designer et Expert SEO</span>
+                    </figcaption>                
+                </figure>
+            </slide>
+            <slide :key="slide">
+                <figure>
+                    <img src="../assets/persona.jpg" alt="">
+                    <figcaption>
+                        <strong>Bastian</strong>
+                        <span>Dévellopeur Full-Stack</span>
+                    </figcaption>                
+                </figure>
+            </slide>            
             <template #addons>
                 <pagination />
             </template>
@@ -152,6 +184,7 @@ export default {
 .team_members {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .team_members figure  {
     margin: 0;
