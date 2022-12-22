@@ -220,9 +220,10 @@
     top: 505px;
     padding: 3%;
 }
-.solutions_item:nth-child(2) .solutions_item_secondpart {
+.solutions_item:nth-child(2n) .solutions_item_secondpart {
     margin-top: 700px;
     margin-left: 8%;
+    flex-direction: row-reverse;
 }
 /* éléments  pairs */
 .solutions_item:nth-child(2n) img {
@@ -348,7 +349,7 @@
         font-weight: 500;
         padding: 150px 0% 0% 0%;
     }
-    .solutions_item_secondpart {
+    .solutions_item:nth-child(n) .solutions_item_secondpart {
         flex-direction: column;
         align-items: center;
         padding-bottom: 5px;
