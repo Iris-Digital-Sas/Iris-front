@@ -5,7 +5,6 @@
       <ul class="header-nav-list">
         <li><router-link to="/solutions">NOS SOLUTIONS</router-link></li>
         <li><router-link to="/team">L'EQUIPE</router-link></li>
-        <li><router-link to="/achievements">REALISATIONS</router-link></li>
         <li><router-link to="/prices">NOS TARIFS</router-link></li>
         <li><router-link to="/contact">CONTACT</router-link></li>
       </ul>
@@ -14,7 +13,6 @@
       <ul class="menu" >
         <li><router-link to="/solutions">NOS SOLUTIONS</router-link></li>
         <li><router-link to="/team">L'EQUIPE</router-link></li>
-        <li><router-link to="/achievements">REALISATIONS</router-link></li>
         <li><router-link to="/prices">NOS TARIFS</router-link></li>
         <li><router-link to="/contact">CONTACT</router-link></li>
       </ul>
@@ -90,6 +88,20 @@ export default {
     padding: 0;
     width: 100%;
   }
+  .menu {
+    margin-bottom: 0;
+    height: 75%;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    margin-top: 75px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
   .menu-button-container {
     display: flex;
   }
@@ -104,18 +116,7 @@ export default {
     left: 50px;
     top: 25px;
   }
-  .menu {
-    padding: 0;
-    position: absolute;
-    top: 0;
-    margin-top: 75px;
-    left: 0;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-  }
+
   #menu-toggle ~ .menu li {
     height: 0;
     margin: 0;
@@ -130,6 +131,7 @@ export default {
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
   .menu > li {
+    flex-basis: 25%;
     display: flex;
     justify-content: center;
     margin: 0;

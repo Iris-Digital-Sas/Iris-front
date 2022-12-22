@@ -48,7 +48,8 @@
             <h1>Pourquoi nous choisir ? </h1>
             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim uptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sintuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fuccaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
             <div class="lavender-button">
-                <router-link to="/achievements" class="lavender-button-text">REALISATIONS</router-link>
+                <!--<router-link to="/achievements" class="lavender-button-text">REALISATIONS</router-link>-->
+                <a to="#" class="lavender-button-text">REALISATIONS</a>
             </div>
         </div>
     </section>
