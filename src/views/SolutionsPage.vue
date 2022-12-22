@@ -349,7 +349,7 @@
         font-weight: 500;
         padding: 150px 0% 0% 0%;
     }
-    .solutions_item_secondpart {
+    .solutions_item:nth-child(n) .solutions_item_secondpart {
         flex-direction: column;
         align-items: center;
         padding-bottom: 5px;
