@@ -12,7 +12,5 @@ jobs:
       - uses: actions/checkout@v2
       - name: Build and push image
         run: |
-          docker build -t iris-front_image .
-          docker tag iris-front_image ACCOUNT_ID.dkr.ecr.REGION.amazonaws.com/iris-front_image:latest
-          $(aws ecr get-login --no-include-email --region REGION)
-          docker push ACCOUNT_ID.dkr.ecr.REGION
+          docker build -t iris-front_image  .
+          docker push iris-front_image 
