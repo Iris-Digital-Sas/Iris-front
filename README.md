@@ -10,6 +10,16 @@ npm install
 npm install vue-router@4
 ```
 
+## Vue menu-burger setup
+```
+npm install vue3-burger-menu --save
+```
+
+## Vue carousel setup
+```
+npm install vue3-carousel
+```
+
 ### Compiles and hot-reloads for development
 ```
 npm run serve

@@ -80,48 +80,50 @@ export default {
   width: 5px !important; 
   height: 40px !important;
 }
-.bm-menu {
-    height: 28.5%;
-    padding-top: 75px;
-    background-color: rgba(20, 20, 44, 1);
-  }
-  .bm-burger-button {
-    position: absolute;
-    width: 40px;
-    left: 50px;
-    top: 25px;
-  }
-
-  #menu-toggle ~ .menu li {
-    height: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  #menu-toggle:checked ~ .menu li {
-    border: 1px solid #333;
-    height: 2.5em;
-    padding: 0.5em;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  .menu > li {
-    flex-basis: 25%;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0.5em 0;
-    width: 100%;
-    color: white;
-    background-color: rgba(20, 20, 44, 1);
-  }
-  .menu > li a{
-    color: white;
-    align-self: center;
-  }
-  .menu > li:not(:last-child) {
-    border-bottom: 1px solid #444;
-  }
+header .bm-menu {
+  height: 28.5%;
+  padding-top: 75px;
+  background-color: rgba(20, 20, 44, 1);
+}
+.bm-item-list > * {
+  padding: 0;
+}
+.bm-burger-button {
+  position: absolute;
+  width: 40px;
+  left: 50px;
+  top: 25px;
+}
+#menu-toggle ~ .menu li {
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+#menu-toggle:checked ~ .menu li {
+  border: 1px solid #333;
+  height: 2.5em;
+  padding: 0.5em;
+  transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.menu > li {
+  flex-basis: 25%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0.5em 0;
+  width: 100%;
+  color: white;
+  background-color: rgba(20, 20, 44, 1);
+}
+.menu > li a{
+  color: white;
+  align-self: center;
+}
+.menu > li:not(:last-child) {
+  border-bottom: 1px solid #444;
+}
 
 @media (max-width: 1000px) {
   .header {
@@ -133,7 +135,6 @@ export default {
   .menu {
     margin-bottom: 0;
     height: 75%;
-    padding: 0;
     position: absolute;
     top: 0;
     margin-top: 75px;
