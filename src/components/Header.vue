@@ -85,8 +85,8 @@ header .bm-menu {
   padding-top: 75px;
   background-color: rgba(20, 20, 44, 1);
 }
-.bm-item-list > * {
-  padding: 0;
+.menu {
+  padding: 0 !important;
 }
 .bm-burger-button {
   position: absolute;
