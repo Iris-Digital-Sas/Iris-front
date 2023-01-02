@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <router-link to="/"><img alt="Iris Digital" src="../assets/logo-iris.png" class="header_img"/></router-link>
+    <router-link to="/Iris-front/"><img alt="Iris Digital" src="../assets/logo-iris.png" class="header_img"/></router-link>
     <nav class="header-nav">
       <ul class="header-nav-list">
         <li><router-link to="/solutions">NOS SOLUTIONS</router-link></li>
@@ -80,32 +80,7 @@ export default {
   width: 5px !important; 
   height: 40px !important;
 }
-
-@media (max-width: 1000px) {
-  .header {
-    background-color: rgba(20, 20, 44, 1);
-    flex-direction: row-reverse;
-    padding: 0;
-    width: 100%;
-  }
-  .menu {
-    margin-bottom: 0;
-    height: 75%;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    margin-top: 75px;
-    left: 0;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-  }
-  .menu-button-container {
-    display: flex;
-  }
-  .bm-menu {
+.bm-menu {
     height: 28.5%;
     padding-top: 75px;
     background-color: rgba(20, 20, 44, 1);
@@ -146,6 +121,31 @@ export default {
   }
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
+  }
+
+@media (max-width: 1000px) {
+  .header {
+    background-color: rgba(20, 20, 44, 1);
+    flex-direction: row-reverse;
+    padding: 0;
+    width: 100%;
+  }
+  .menu {
+    margin-bottom: 0;
+    height: 75%;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    margin-top: 75px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .menu-button-container {
+    display: flex;
   }
   .header-nav {
     display: none;

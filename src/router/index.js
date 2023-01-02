@@ -13,7 +13,7 @@ const router = createRouter({
   routes: [
     {
       name: "HomePage",
-      path: '/',
+      path: '/Iris-front/',
       component: HomePage
     },
     { 
