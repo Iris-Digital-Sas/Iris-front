@@ -535,7 +535,7 @@ export default {
     width: 85px;
     padding: 8.5% .25%;
 }
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
     .title-prices {
         height: 750px;
         flex-direction: column;
