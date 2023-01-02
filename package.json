@@ -1,12 +1,14 @@
 {
   "name": "iris-front",
   "version": "0.1.0",
+  "homepage": "https://iris-digital-sas.github.io/iris-front/",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "node scripts/gh-pages-deploy.js"
+    "deploy": "node scripts/gh-pages-deploy.js",
+    "github": "gh-pages -d dist"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
