@@ -5,57 +5,6 @@
     </section>
     <section class="team">
         <h2 class="team-title">l'équipe d'iris</h2>
-        <div class="team_members">
-            <figure>
-                <img src="../assets/persona.jpg" alt="">
-                <figcaption>
-                    <strong>Geoffrey</strong>
-                    <span>Architecte Logiciel</span>
-                </figcaption>                
-            </figure>
-            <figure>
-                <img src="../assets/persona.jpg" alt="">
-                <figcaption>
-                    <strong>Amaury</strong>
-                    <span>Marketing Digital</span>
-                </figcaption>                
-            </figure>
-            <figure>
-                <img src="../assets/persona.jpg" alt="">
-                <figcaption>
-                    <strong>Hugo</strong>
-                    <span>Ingénieur Intelligence Artificielle et Ingénierie logiciel</span>
-                </figcaption>                
-            </figure>
-            <figure>
-                <img src="../assets/persona.jpg" alt="">
-                <figcaption>
-                    <strong>Sofian</strong>
-                    <span>Marketing Digital</span>
-                </figcaption>                
-            </figure>
-            <figure>
-                <img src="../assets/persona.jpg" alt="">
-                <figcaption>
-                    <strong>Marie</strong>
-                    <span>Graphiste</span>
-                </figcaption>                
-            </figure>
-            <figure>
-                <img src="../assets/persona.jpg" alt="">
-                <figcaption>
-                    <strong>Enzo</strong>
-                    <span>Web designer et Expert SEO</span>
-                </figcaption>                
-            </figure>
-            <figure>
-                <img src="../assets/persona.jpg" alt="">
-                <figcaption>
-                    <strong>Bastian</strong>
-                    <span>Dévellopeur Full-Stack</span>
-                </figcaption>                
-            </figure>
-        </div>
         <Carousel id="team_carousel">
             <slide :key="slide">
                 <figure>
@@ -181,42 +130,53 @@ export default {
     text-align: center;
     font-weight: 700;
 }
-.team_members {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+#team_carousel {
+    width: 100%;
+    height: 350px;
+    align-self: center;
 }
-.team_members figure  {
+.carousel__viewport, .carousel__track{
+    height: 100%;
+    width: 100%;
+    padding: 0;
     margin: 0;
-    flex-basis: 20%;
-    position: relative;
+    gap: 4%;
 }
-.team_members figure:hover figcaption{
+.carousel__track li {
+    height: 100%;
+    flex-basis: 30%;
+    padding: 0;
+    margin: 0;
+}
+.carousel__track figure, .carousel__track img { 
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.carousel__track img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+.carousel__track figure:hover figcaption{
    opacity: 1;
    background-color: rgba(33, 33, 50, 0.76);
    transition:  all 500ms ease;
 }
-.team_members figure img {
-    width: 303px;
-    height: 365px;
-    object-fit: cover;
-}
-.team_members figcaption {
+.carousel__track figcaption {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 10px;
-}
-.team_members figcaption {
     font-weight: 300;
     font-size: 22px;
     line-height: 33px;
     position: absolute;
     z-index: 2;
     top: 0;
-    width: 303px;
-    height: 365px;
+    width: 100%;
+    height: 350px;
     opacity: 0;
     display: flex;
     flex-direction: column;
@@ -225,16 +185,18 @@ export default {
     color: white;
     transition:  opacity 500ms ease, background-color 500ms ease;
 }
-.carousel{
-    display: none;
-}
-
 @media (max-width: 1000px) {
     .team {
         height: 700px;
     }
-    .team_members {
-        display: none;
+    #team_carousel {
+        width: 50%;
+    }
+    .carousel__viewport, .carousel__track{
+        gap: 0px;
+    }
+    .carousel__track li {
+        flex-basis: 100%;
     }
     .carousel {
         display: initial;
@@ -244,30 +206,6 @@ export default {
     }
     .carousel__pagination {
         padding: 0;
-    }
-    .carousel figure {
-        margin: 0%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .carousel img {
-        width: 300px;
-        height: 300px;
-        object-fit: cover;
-    }
-    .carousel figcaption {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 300px;
-        height: 100px;
-        gap: 15px;
-    }
-    .carousel figcaption strong {
-        display: block;
-        border-bottom: 1.5px grey dashed;
-        padding-bottom: 25px;
     }
 }
 @media( max-width: 599px) {
