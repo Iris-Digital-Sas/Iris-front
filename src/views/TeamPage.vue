@@ -190,7 +190,7 @@ export default {
         height: 700px;
     }
     #team_carousel {
-        width: 50%;
+        width: 300px;
     }
     .carousel__viewport, .carousel__track{
         gap: 0px;
