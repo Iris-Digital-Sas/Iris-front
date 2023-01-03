@@ -140,9 +140,10 @@
         font-size: 165%;
     }
     .section-contact_img{
-        left: 0px;
-        bottom: 215px;
-        width: 100%;
+        left: 16%;
+        bottom: 32%;
+        width: 300px;
+        height: 200px;
     }
     .section-contact-form {
         width: 100%;
@@ -164,5 +165,9 @@
         align-self: center;
     }
 }
-
+@media (max-width: 400px) {
+    .section-contact_img{
+        left: 12%;
+    }
+}
 </style>
