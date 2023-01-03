@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router"
+import { createRouter, createWebHashHistory } from "vue-router"
 import HomePage  from '@/views/HomePage'
 import SolutionsPage from '@/views/SolutionsPage'
 import TeamPage  from '@/views/TeamPage'
@@ -10,7 +10,7 @@ const router = createRouter({
   scrollBehavior() {
      return { top: 0 }
   },
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes: [
     {
       path: '/',
