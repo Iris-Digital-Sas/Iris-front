@@ -25,9 +25,9 @@ npm install vue3-carousel
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compiles and deploy the production version on github-pages from gh-pages branch
 ```
-npm run deploy.sh
+npm run deploy
 ```
 
 ### Lints and fixes files

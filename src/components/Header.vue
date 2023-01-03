@@ -3,18 +3,18 @@
     <router-link to="/Iris-front/"><img alt="Iris Digital" src="../assets/logo-iris.png" class="header_img"/></router-link>
     <nav class="header-nav">
       <ul class="header-nav-list">
-        <li><router-link to="/solutions">NOS SOLUTIONS</router-link></li>
-        <li><router-link to="/team">L'EQUIPE</router-link></li>
-        <li><router-link to="/prices">NOS TARIFS</router-link></li>
-        <li><router-link to="/contact">CONTACT</router-link></li>
+        <li><router-link to="/Iris-front/solutions">NOS SOLUTIONS</router-link></li>
+        <li><router-link to="/Iris-front/team">L'EQUIPE</router-link></li>
+        <li><router-link to="/Iris-front/prices">NOS TARIFS</router-link></li>
+        <li><router-link to="/Iris-front/contact">CONTACT</router-link></li>
       </ul>
     </nav>
     <Slide :closeOnNavigation="true" >
       <ul class="menu">
-        <li><router-link to="/solutions">NOS SOLUTIONS</router-link></li>
-        <li><router-link to="/team">L'EQUIPE</router-link></li>
-        <li><router-link to="/prices">NOS TARIFS</router-link></li>
-        <li><router-link to="/contact">CONTACT</router-link></li>
+        <li><router-link to="/Iris-front/solutions">NOS SOLUTIONS</router-link></li>
+        <li><router-link to="/Iris-front/team">L'EQUIPE</router-link></li>
+        <li><router-link to="/Iris-front/prices">NOS TARIFS</router-link></li>
+        <li><router-link to="/Iris-front/contact">CONTACT</router-link></li>
       </ul>
     </Slide>
   </header>

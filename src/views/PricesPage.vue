@@ -14,7 +14,7 @@
                         <span class="lavender-text">à partir de <strong>1000 €</strong></span>
                         <div class="most-popular bgc-dark-blue">LE PLUS POPULAIRE</div>
                         <h3>Développement CMS</h3>
-                        <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/contact">Demander un devis</router-link></button>
+                        <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/Iris-front/contact">Demander un devis</router-link></button>
                         <ul>
                             <li>Wordpress</li>
                             <li>Prestashop</li>
@@ -30,7 +30,7 @@
                         <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
                         <span class="lavender-text">à partir de <strong>1500 €</strong></span>
                         <h3>HTML / PHP</h3>
-                        <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/contact">Demander un devis</router-link></button>
+                        <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/Iris-front/contact">Demander un devis</router-link></button>
                         <ul>
                             <li>Optimisé pour le CEO</li>
                             <li>Rapide et fluide</li>
@@ -46,7 +46,7 @@
                         <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
                         <span class="lavender-text">à partir de 2000 €</span>
                         <h3>Développement spécifique</h3>
-                        <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/contact">Demander un devis</router-link></button>
+                        <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/Iris-front/contact">Demander un devis</router-link></button>
                         <ul>
                             <li>Optimisé pour le CEO</li>
                             <li>Rapide et fluide</li>
@@ -68,7 +68,7 @@
                     <span class="lavender-text">à partir de <strong>1000 €</strong></span>
                     <div class="most-popular bgc-dark-blue">LE PLUS POPULAIRE</div>
                     <h3>Développement CMS</h3>
-                    <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/contact">Demander un devis</router-link></button>
+                    <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/Iris-front/contact">Demander un devis</router-link></button>
                     <ul>
                         <li>Wordpress</li>
                         <li>Prestashop</li>
@@ -82,7 +82,7 @@
                     <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
                     <span class="lavender-text">à partir de <strong>1500 €</strong></span>
                     <h3>HTML / PHP</h3>
-                    <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/contact">Demander un devis</router-link></button>
+                    <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/Iris-front/contact">Demander un devis</router-link></button>
                     <ul>
                         <li>Optimisé pour le CEO</li>
                         <li>Rapide et fluide</li>
@@ -96,7 +96,7 @@
                     <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
                     <span class="lavender-text">à partir de 2000 €</span>
                     <h3>Développement spécifique</h3>
-                    <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/contact">Demander un devis</router-link></button>
+                    <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/Iris-front/contact">Demander un devis</router-link></button>
                     <ul>
                         <li>Optimisé pour le CEO</li>
                         <li>Rapide et fluide</li>
@@ -119,7 +119,7 @@
                     <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
                     <span class="lavender-text">à partir de <strong>490 €</strong> / mois</span>
                     <h3>Campagne Social ADS</h3>
-                    <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/contact">Demander un devis</router-link></button>
+                    <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/Iris-front/contact">Demander un devis</router-link></button>
                     <ul>
                         <li>Facebook ADS</li>
                         <li>Instagram ADS</li>
@@ -134,7 +134,7 @@
                         <span class="lavender-text">à partir de <strong>890 €</strong> / mois</span>
                         <div class="most-popular bgc-dark-blue">LE PLUS POPULAIRE</div>
                         <h3>SEO</h3>
-                        <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/contact">Demander un devis</router-link></button>
+                        <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/Iris-front/contact">Demander un devis</router-link></button>
                         <ul>
                             <li>Audit de site</li>
                             <li>Etude de mots-clés</li>
@@ -153,7 +153,7 @@
                         <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
                         <span class="lavender-text">à partir de <strong>490 €</strong> / mois</span>
                         <h3>SEA</h3>
-                        <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/contact">Demander un devis</router-link></button>
+                        <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/Iris-front/contact">Demander un devis</router-link></button>
                         <ul>
                             <li>Gestion des campagnes Google Adwords</li>
                             <li>Gestion des campagnes Bing</li>
@@ -176,7 +176,7 @@
                     <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
                     <span class="lavender-text">à partir de <strong>490 €</strong> / mois</span>
                     <h3>Campagne Social ADS</h3>
-                    <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/contact">Demander un devis</router-link></button>
+                    <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/Iris-front/contact">Demander un devis</router-link></button>
                     <ul>
                         <li>Facebook ADS</li>
                         <li>Instagram ADS</li>
@@ -189,7 +189,7 @@
                     <span class="lavender-text">à partir de <strong>890 €</strong> / mois</span>
                     <div class="most-popular bgc-dark-blue">LE PLUS POPULAIRE</div>
                     <h3>SEO</h3>
-                    <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/contact">Demander un devis</router-link></button>
+                    <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/Iris-front/contact">Demander un devis</router-link></button>
                     <ul>
                         <li>Audit de site</li>
                         <li>Etude de mots-clés</li>
@@ -206,7 +206,7 @@
                     <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
                     <span class="lavender-text">à partir de <strong>490 €</strong> / mois</span>
                     <h3>SEA</h3>
-                    <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/contact">Demander un devis</router-link></button>
+                    <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/Iris-front/contact">Demander un devis</router-link></button>
                     <ul>
                         <li>Gestion des campagnes Google Adwords</li>
                         <li>Gestion des campagnes Bing</li>
@@ -230,7 +230,7 @@
                     <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
                     <span class="lavender-text">à partir de <strong>199 €</strong> / mois</span>
                     <h3>Pack présence</h3>
-                    <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/contact">Demander un devis</router-link></button>
+                    <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/Iris-front/contact">Demander un devis</router-link></button>
                     <ul>
                         <li>Création ou restructuration comptes / pages</li>
                         <li>1 post chaque semaine</li>
@@ -243,7 +243,7 @@
                         <span class="lavender-text">à partir de <strong>499 €</strong> / mois</span>
                         <div class="most-popular bgc-dark-blue">LE PLUS POPULAIRE</div>
                         <h3>Pack performance</h3>
-                        <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/contact">Demander un devis</router-link></button>
+                        <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/Iris-front/contact">Demander un devis</router-link></button>
                         <ul>
                             <li>Création ou restructuration comptes / pages</li>
                             <li>4/5 posts chaque semaine</li>
@@ -262,7 +262,7 @@
                         <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
                         <span class="lavender-text">à partir de <strong>1499 €</strong> / mois</span>
                         <h3>Pack puissance</h3>
-                        <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/contact">Demander un devis</router-link></button>
+                        <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/Iris-front/contact">Demander un devis</router-link></button>
                         <ul>
                             <li>Création ou restructuration comptes / pages</li>
                             <li>2/4 posts chaque jour</li>
@@ -285,7 +285,7 @@
                     <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
                     <span class="lavender-text">à partir de <strong>199 €</strong> / mois</span>
                     <h3>Pack présence</h3>
-                    <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/contact">Demander un devis</router-link></button>
+                    <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/Iris-front/contact">Demander un devis</router-link></button>
                     <ul>
                         <li>Création ou restructuration comptes / pages</li>
                         <li>1 post chaque semaine</li>
@@ -296,7 +296,7 @@
                     <span class="lavender-text">à partir de <strong>499 €</strong> / mois</span>
                     <div class="most-popular bgc-dark-blue">LE PLUS POPULAIRE</div>
                     <h3>Pack performance</h3>
-                    <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/contact">Demander un devis</router-link></button>
+                    <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/Iris-front/contact">Demander un devis</router-link></button>
                     <ul>
                         <li>Création ou restructuration comptes / pages</li>
                         <li>4/5 posts chaque semaine</li>
@@ -313,7 +313,7 @@
                     <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
                     <span class="lavender-text">à partir de <strong>1499 €</strong> / mois</span>
                     <h3>Pack puissance</h3>
-                    <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/contact">Demander un devis</router-link></button>
+                    <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/Iris-front/contact">Demander un devis</router-link></button>
                     <ul>
                         <li>Création ou restructuration comptes / pages</li>
                         <li>2/4 posts chaque jour</li>
@@ -332,7 +332,7 @@
             <h2>NOS TARIFS LEADS</h2>
             <p>La génération de leads est prestation particulière car elle est <br>fortement dépendante de la demande du client, et varie trop fortement <br>pour établir un <strong>tarif généralisé</strong>.</p>
             <p>Dans ce contexte, nous vous encourageons à nous <strong>contacter</strong> via le <br>bouton de contact ci-dessous afin de trouver la formule qui vous<br> conviendra, selon les clients que vous visez, et le budget qui est le vôtre.</p>
-            <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/contact">Demander un devis</router-link></button>
+            <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/Iris-front/contact">Demander un devis</router-link></button>
         </section>
     </div>
 </template>

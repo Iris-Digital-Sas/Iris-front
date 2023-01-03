@@ -12,7 +12,6 @@
                     <textarea name="" id="" cols="30" rows="10" placeholder="Quelques mots ?"></textarea>
                     <div id="fa-button">
                     <input id="contact-button" type="submit" value="ENVOYER">
-                    
                         <font-awesome-icon icon="fa-solid fa-arrow-down" />
                     </div>                    
                 </form>

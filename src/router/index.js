@@ -13,33 +13,40 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
+      path: '/',
+      redirect: { name: 'HomePage' }
+    },
+    {
       name: "HomePage",
       path: '/Iris-front/',
       component: HomePage
     },
     { 
-      path: '/solutions',
+      path: '/Iris-front/solutions',
       component: SolutionsPage 
     },
     { 
-      path: '/team',
+      path: '/Iris-front/team',
       component: TeamPage 
     },
     { 
       name:'PricesPage',
-      path: '/prices',
+      path: '/Iris-front/prices',
       component: PricesPage
     },
     {
       name:'PricesPageSections',
-      path: '/prices/:id',
+      path: '/Iris-front/prices/:id',
       component: PricesPage,
       children: [{
         path:''
-      }] 
+      }] ,
+      scrollBehavior( ) {
+        return this.$route.params.id;
+      }
     },
     {
-      path: '/contact',
+      path: '/Iris-front/contact',
       component: ContactPage 
     },
     {
