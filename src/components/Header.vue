@@ -9,8 +9,8 @@
         <li><router-link to="/contact">CONTACT</router-link></li>
       </ul>
     </nav>
-    <Slide :closeOnNavigation="true">
-      <ul class="menu" >
+    <Slide :closeOnNavigation="true" >
+      <ul class="menu">
         <li><router-link to="/solutions">NOS SOLUTIONS</router-link></li>
         <li><router-link to="/team">L'EQUIPE</router-link></li>
         <li><router-link to="/prices">NOS TARIFS</router-link></li>
@@ -73,8 +73,8 @@ export default {
   width: 50px;
 }
 .cross-style {
-  top: 20px;
-  right: 175px;
+  top: 20px !important;
+  right: 175px !important;
 }
 .bm-cross-button .bm-cross {
   width: 5px !important; 
@@ -91,8 +91,8 @@ header .bm-menu {
 .bm-burger-button {
   position: absolute;
   width: 40px;
-  left: 50px;
-  top: 25px;
+  left: 50px !important;
+  top: 25px !important;
 }
 #menu-toggle ~ .menu li {
   height: 0;
@@ -153,6 +153,14 @@ header .bm-menu {
   }
   #slide{
     display: contents;
+  }
+}
+@media (max-width: 430px) {
+  .header .bm-menu{
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .cross-style {
+    opacity: 0;
   }
 }
 @media (min-width: 1000px) {
