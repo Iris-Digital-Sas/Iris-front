@@ -4,6 +4,7 @@ import SolutionsPage from '@/views/SolutionsPage'
 import TeamPage  from '@/views/TeamPage'
 import PricesPage from '@/views/PricesPage'
 import ContactPage  from '@/views/ContactPage'
+import NotFoundPage  from '@/views/NotFoundPage'
 
 const router = createRouter({
   scrollBehavior() {
@@ -27,20 +28,24 @@ const router = createRouter({
     { 
       name:'PricesPage',
       path: '/prices',
+      component: PricesPage
+    },
+    {
+      name:'PricesPageSections',
+      path: '/prices/:id',
       component: PricesPage,
       children: [{
-          path:'/prices/:id',
-          component: PricesPage,
-        }
-      ] 
+        path:''
+      }] 
     },
     {
       path: '/contact',
       component: ContactPage 
     },
     {
-      path: '/:catchAll(.*)',
       name: 'NotFound',
+      path: '/:pathMatch(.*)',     
+      component: NotFoundPage
     }
   ]  
 })
