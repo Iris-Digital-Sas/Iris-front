@@ -39,7 +39,7 @@
             </figure>
         </div>
         <div class="lavender-box">
-            <router-link to="/solutions" class="lavender-box-text">Découvrir nos solutions</router-link>
+            <router-link to="/Iris-front/solutions" class="lavender-box-text">Découvrir nos solutions</router-link>
         </div>               
     </section>
     <section class="home-realisations">
