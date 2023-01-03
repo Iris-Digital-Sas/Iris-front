@@ -254,7 +254,6 @@
                             <li>Modération de la page</li>
                             <li>Gestion E-réputation</li>
                         </ul>
-                        <a class="formula-look lavender-text"><font-awesome-icon icon="fa-solid fa-arrow-down" /> voir plus</a>
                     </div>
                 </Slide>
                 <Slide :key="slide">
@@ -273,7 +272,6 @@
                             <li>Modération de la page</li>
                             <li>Gestion E-réputation</li>
                         </ul>
-                        <a class="formula-look lavender-text"><font-awesome-icon icon="fa-solid fa-arrow-down" /> voir plus</a>
                     </div>
                 </Slide>
                 <template #addons>
@@ -305,9 +303,7 @@
                         <li>Création de contenus personnalisés</li>
                         <li>Gestion des commentaires</li>
                         <li>Modération de la page</li>
-                        <li>Gestion E-réputation</li>
                     </ul>
-                    <a class="formula-look lavender-text"><font-awesome-icon icon="fa-solid fa-arrow-down" /> voir plus</a>
                 </div>
                 <div class="formula">
                     <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol.png" alt=""></div>
@@ -323,8 +319,8 @@
                         <li>Gestion des commentaires</li>
                         <li>Modération de la page</li>
                         <li>Gestion E-réputation</li>
+                        <li>Veille concurrentielle</li>
                     </ul>
-                    <a class="formula-look lavender-text"><font-awesome-icon icon="fa-solid fa-arrow-down" /> voir plus</a>
                 </div>
             </div>
         </section>
@@ -481,25 +477,6 @@ export default {
     content: " •"; /*  */
     font-size: 20px;
     margin: 5%;  
-}
-.formula-look {
-    text-transform: uppercase;
-    margin-left: 70px;
-    float: left;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-}
-.formula-look svg {
-    width: 15px;
-    height: 18px;
-    transform-origin: 7px 10px;
-    transform: rotate(-45deg);
-    transition: transform 500ms 100ms;
-}
-.formula-look:hover svg {
-    transform: rotate(-90deg);
-    transition: all 500ms 100ms;
 }
 .prices h2 {
     font-weight: 700;

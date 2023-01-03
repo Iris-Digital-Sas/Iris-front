@@ -1,7 +1,7 @@
 <template>
     <section class="origin-section">
         <div>
-            <p>IRIS met à votre service l’Intelligence Artificielle. boostez votre <span class="lavender-text">visibilité</span></p>
+            <p>IRIS met à votre service l’Intelligence Artificielle. boostez votre <span class="lavender-text"> visibilité.</span> <img id="home-gif" src="https://static.wixstatic.com/media/f6e276_207676192cea4e7a90bf76d6fa00f1ac~mv2.gif" alt="possibilitées"></p>
             <a href="#begining"><font-awesome-icon icon="fa-solid fa-arrow-down" /></a>
         </div>
     </section>
@@ -46,7 +46,7 @@
         <img src="../assets/home-img.png" alt="">
         <div class="bgc-dark-blue">
             <h1>Pourquoi nous choisir ? </h1>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim uptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sintuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fuccaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+            <p>Pour trouver une solution adaptée à votre projet, vos contraintes, votre budget et votre image, nous discuterons ensemble. Nous prendrons le temps d'échanger afin de déterminer votre besoin et d'y répondre le plus efficacement possible. Que vous ayez besoin d'un site vitrine, d'un site d'e-commerce, d'aide pour votre community management, pour votre SEO, ou bien d'un audit pour optimiser vos ventes/process internes avec une intelligence artificielle, nous avons en main les clés pour réaliser votre projet.</p>
             <div class="lavender-button">
                 <!--<router-link to="/achievements" class="lavender-button-text">REALISATIONS</router-link>-->
                 <a to="#" class="lavender-button-text">REALISATIONS</a>
@@ -62,7 +62,7 @@
         <div class="home-contact-bloc">
             <div class="home-contact-bloc-text">
                 <h1>On discute ?</h1>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                <p>Décrivez votre projet, précisez vos contraintes, vos envies et donnez nous vos disponibilités afin que nous puissions vous recontacter et échanger avec vous</p>
                 <div class="home-contact-bloc-text_email">
                     <img src="../assets/email.png" alt="email"><span>hello@irisdigital.fr</span>
                 </div>
@@ -106,6 +106,10 @@
     font-size: 50px;
     line-height: 87px;
     text-transform: uppercase;
+}
+.origin-section  #home-gif {
+    height: 385px;
+    display: none
 }
 .home-solutions {
     padding: 15% 0 13%;

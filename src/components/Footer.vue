@@ -4,7 +4,7 @@
             <span>2022 © IRIS Digital</span>
             <span>Mentions légales</span>
         </div>
-        <a href="mailto:hello@irisdigital.fr">hello@irisdigital.fr</a>
+        <a href="mailto:hello@irisdigital.fr">info@iris-digital.fr</a>
     </footer>
 </template>
 

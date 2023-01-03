@@ -1,6 +1,6 @@
 <template>
     <section class="solution_intro bgc-grey">
-        <h1 class="solution_intro-title">IRIS VOUS OFFRE UNE <br><span class="lavender-text">EXPERTISE</span> COMPLETE TRUC REMPLACER</h1>
+        <h1 class="solution_intro-title">IRIS VOUS OFFRE UNE <br><span class="lavender-text">EXPERTISE</span> COMPLETE DANS LES DOMAINES DU MARKETING DIGITAL ET DE L'IA</h1>
         <div class="lavender-box solution_intro-button">
             <router-link to="/Iris-front/prices" class="lavender-box-text">NOS TARIFS</router-link>
         </div>        
