@@ -35,17 +35,6 @@ const router = createRouter({
       component: PricesPage
     },
     {
-      name:'PricesPageSections',
-      path: '/Iris-front/prices/:id',
-      component: PricesPage,
-      children: [{
-        path:''
-      }] ,
-      scrollBehavior( ) {
-        return this.$route.params.id;
-      }
-    },
-    {
       path: '/Iris-front/contact',
       component: ContactPage 
     },
