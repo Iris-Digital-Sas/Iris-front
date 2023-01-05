@@ -1,3 +1,3 @@
 module.exports = {
-  publicPath: ''
+  publicPath: 'https://iris-digital-sas.github.io/'
 }
