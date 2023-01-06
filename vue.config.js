@@ -1,3 +1,3 @@
 module.exports = {
-  publicPath: '/Iris-front'
+  publicPath: 'https://iris-digital.fr'
 }
