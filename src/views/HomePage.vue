@@ -286,7 +286,7 @@
     border-radius: 40px;
     padding: 15px 55px;
     bottom: -150px;
-    right: 790px;
+    right: 42%;
 }
 .home-contact-bloc .lavender-box {
     height: 25px;
