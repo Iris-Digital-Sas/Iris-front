@@ -8,7 +8,7 @@
     <div class="bgc-dark-blue solutions">
         <section class="solutions_item" id="wd">
             <figure class="solutions_item_firstpart">
-                <img :src="`${publicPath}SolutionImg1-min.png`" alt="">
+                <img src="../../public/SolutionImg1-min.png" alt="">
                 <figcaption>
                     <blockquote>
                         <p>“Un site vitrine est un site Web qui présente en ligne les produits ou les services d'une organisation, dans le but de pouvoir attirer simplement l'attention et d'éveiller l'intérêt des internautes de passage, le plus souvent sans permettre d'acheter directement le produit ou le service proposé.” <cite> Wikipedia</cite></p> 
@@ -27,7 +27,7 @@
         </section>
         <section class="solutions_item" id="seo">
             <figure class="solutions_item_firstpart">
-                <img :src="`${publicPath}SolutionImg2-min.png`" alt="">
+                <img src="../../public/SolutionImg2-min.png" alt="">
                 <figcaption>
                     <blockquote>
                     <p>“L'optimisation pour les moteurs de recherche, aussi connue sous le sigle SEO (de l'anglais : search engine optimization), inclut l'ensemble des techniques qui visent à améliorer le positionnement d'une page, d'un site ou d'une application web dans la page de résultats d'un moteur de recherche. “ <cite> Wikipedia</cite></p></blockquote>
@@ -44,7 +44,7 @@
         </section>
         <section class="solutions_item" id="leads">
             <figure class="solutions_item_firstpart">
-                <img :src="`${publicPath}SolutionImg3-min.png`" alt="">
+                <img src="../../public/SolutionImg3-min.png" alt="">
                 <figcaption>
                     <blockquote>
                     <p>“Un lead représente une piste commerciale à explorer : par exemple, quand un prospect a manifesté son intérêt pour un produit proposé par une société. La plupart du temps, il s'agit d'un contact qualifié puisque le prospect a laissé ses coordonnées pour être rappelé.”  <cite> JDN</cite></p>
@@ -62,7 +62,7 @@
         </section>
         <section class="solutions_item" id="cm">
             <figure class="solutions_item_firstpart">
-                <img :src="`${publicPath}SolutionImg4-min.png`" alt="">
+                <img src="../../public/SolutionImg4-min.png" alt="">
                 <figcaption>
                     <blockquote>
                     <p>“Le community management permet, entre autres, d'accroître <br>la notoriété de l'entreprise, de développer son portefeuille clients
@@ -87,15 +87,7 @@
         </section>
     </div> 
 </template>
-<script>
-export default {
-    data () {
-        return {
-            publicPath: process.env.BASE_URL
-        }
-    }
-}
-</script>
+
 <style>
 /* Première partie */
 .solution_intro {

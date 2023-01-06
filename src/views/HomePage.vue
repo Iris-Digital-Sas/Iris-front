@@ -10,28 +10,28 @@
         <span>Toutes nos solutions sont dopées à <span class="lavender-text">l’Intelligence Artificielle</span></span>
         <div>
             <figure>
-                <img :src="`${publicPath}pencil-min.png`" alt="">
+                <img src="../../public/pencil-min.png" alt="">
                 <figcaption>
                     <h2>UI/UX Design</h2>
                     <p>Réalisation de vos sites vitrines et e-commerces.</p>
                 </figcaption>
             </figure>
             <figure>
-                <img :src="`${publicPath}computer-min.png`" alt="">
+                <img src="../../public/computer-min.png" alt="">
                 <figcaption>
                     <h2>SEO</h2>
                     <p>Vous faire apparaître parmi les premiers liens des moteurs de recherche.</p>
                 </figcaption>
             </figure>
             <figure>
-                <img :src="`${publicPath}handshake-min.png`" alt="">
+                <img src="../../public/handshake-min.png" alt="">
                 <figcaption>
                     <h2>Leads</h2>
                     <p>Génération de prospects via les réseaux sociaux et les moteurs de recherche.</p>
                 </figcaption>
             </figure>
             <figure>
-                <img :src="`${publicPath}discuss-min.png`" alt="">
+                <img src="../../public/discuss-min.png" alt="">
                 <figcaption>
                     <h2>Community Management</h2>
                     <p>Assurer votre présence, votre visibilité, votre notoriété et votre image sur les réseaux.</p>
@@ -43,7 +43,7 @@
         </div>               
     </section>
     <section class="home-realisations">
-        <img :src="`${publicPath}home-img-min.png`" alt="">
+        <img src="../../public/home-img-min.png" alt="">
         <div class="bgc-dark-blue">
             <h1>Pourquoi nous choisir ? </h1>
             <p>Pour trouver une solution adaptée à votre projet, vos contraintes, votre budget et votre image, nous discuterons ensemble. Nous prendrons le temps d'échanger afin de déterminer votre besoin et d'y répondre le plus efficacement possible. Que vous ayez besoin d'un site vitrine, d'un site d'e-commerce, d'aide pour votre community management, pour votre SEO, ou bien d'un audit pour optimiser vos ventes/process internes avec une intelligence artificielle, nous avons en main les clés pour réaliser votre projet.</p>
@@ -63,7 +63,7 @@
                 <h1>On discute ?</h1>
                 <p>Décrivez votre projet, précisez vos contraintes, vos envies et donnez nous vos disponibilités afin que nous puissions vous recontacter et échanger avec vous</p>
                 <div class="home-contact-bloc-text_email">
-                    <img :src="`${publicPath}email-min.png`" alt="email"><span>hello@irisdigital.fr</span>
+                    <img src="../../public/email-min.png" alt="email"><span>hello@irisdigital.fr</span>
                 </div>
             </div>
             <form action="">
@@ -77,18 +77,10 @@
         </div>
     </section>
 </template>
-<script>
-export default {
-    data () {
-        return {
-            publicPath: process.env.BASE_URL
-        }
-    }
-}
-</script>
+
 <style>
 .origin-section {
-    background-image: url("acceuil.svg");
+    background-image: url("../../public/acceuil.svg");
     color: white;
 }
 .origin-section div{
