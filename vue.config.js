@@ -1,3 +1,3 @@
 module.exports = {
-  publicPath: '/iris-front'
+  publicPath: '/Iris-front'
 }
