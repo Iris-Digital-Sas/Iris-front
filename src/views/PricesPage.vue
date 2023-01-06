@@ -2,10 +2,10 @@
     <div class="page-tarifs">
         <section class="bgc-dark-blue title-prices">
             <h1>découvrez les différentes <span class="lavender-text">formules</span> d'iris</h1>
-            <span class="prices_info_mobile">Retrouvez le symbole <img class="ai-icon-spoiler" src="../assets/AI-original-min.png" alt="">  pour les solutions intégrant de l'IA</span>    
+            <span class="prices_info_mobile">Retrouvez le symbole <img class="ai-icon-spoiler" src="../../public/AI-original-min.png" alt="">  pour les solutions intégrant de l'IA</span>    
         </section>
         <section class="prices" id="wd">
-            <div class="prices_info bgc-dark-blue">Retrouvez le symbole <img class="ai-icon-spoiler" src="../assets/AI-original-min.png" alt="">  pour les solutions intégrant de l'IA</div>
+            <div class="prices_info bgc-dark-blue">Retrouvez le symbole <img class="ai-icon-spoiler" src="../../public/AI-original-min.png" alt="">  pour les solutions intégrant de l'IA</div>
             <h2>NOS TARIFS DE CONCEPTION DE SITE WEB</h2>
             <span id="IA">Sélectionnez l'une de nos <span class="lavender-text">3 formules</span></span>
             <Carousel>
@@ -27,7 +27,7 @@
                 </Slide>
                 <Slide :key="slide">
                     <div class="formula">
-                        <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol-min.png" alt=""></div>
+                        <div class="ai-icon"><img class="ai-icon" src="../../public/AI-symbol-min.png" alt=""></div>
                         <span class="lavender-text">à partir de <strong>1500 €</strong></span>
                         <h3>HTML / PHP</h3>
                         <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/Iris-front/contact">Demander un devis</router-link></button>
@@ -43,7 +43,7 @@
                 </Slide>
                 <Slide :key="slide">
                     <div class="formula">
-                        <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol-min.png" alt=""></div>
+                        <div class="ai-icon"><img class="ai-icon" src="../../public/AI-symbol-min.png" alt=""></div>
                         <span class="lavender-text">à partir de 2000 €</span>
                         <h3>Développement spécifique</h3>
                         <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/Iris-front/contact">Demander un devis</router-link></button>
@@ -79,7 +79,7 @@
                     </ul>
                 </div>
                 <div class="formula">
-                    <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol-min.png" alt=""></div>
+                    <div class="ai-icon"><img class="ai-icon" src="../../public/AI-symbol-min.png" alt=""></div>
                     <span class="lavender-text">à partir de <strong>1500 €</strong></span>
                     <h3>HTML / PHP</h3>
                     <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/Iris-front/contact">Demander un devis</router-link></button>
@@ -93,7 +93,7 @@
                     </ul>
                 </div>
                 <div class="formula">
-                    <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol-min.png" alt=""></div>
+                    <div class="ai-icon"><img class="ai-icon" src="../../public/AI-symbol-min.png" alt=""></div>
                     <span class="lavender-text">à partir de 2000 €</span>
                     <h3>Développement spécifique</h3>
                     <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/Iris-front/contact">Demander un devis</router-link></button>
@@ -116,7 +116,7 @@
             <Carousel>
                 <Slide :key="slide">
                     <div class="formula">
-                    <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol-min.png" alt=""></div>
+                    <div class="ai-icon"><img class="ai-icon" src="../../public/AI-symbol-min.png" alt=""></div>
                     <span class="lavender-text">à partir de <strong>490 €</strong> / mois</span>
                     <h3>Campagne Social ADS</h3>
                     <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/Iris-front/contact">Demander un devis</router-link></button>
@@ -130,7 +130,7 @@
                 </Slide>
                 <Slide :key="slide">
                     <div class="formula">
-                        <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol-min.png" alt=""></div>
+                        <div class="ai-icon"><img class="ai-icon" src="../../public/AI-symbol-min.png" alt=""></div>
                         <span class="lavender-text">à partir de <strong>890 €</strong> / mois</span>
                         <div class="most-popular bgc-dark-blue">LE PLUS POPULAIRE</div>
                         <h3>SEO</h3>
@@ -150,7 +150,7 @@
                 </Slide>
                 <Slide :key="slide">
                     <div class="formula">
-                        <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol-min.png" alt=""></div>
+                        <div class="ai-icon"><img class="ai-icon" src="../../public/AI-symbol-min.png" alt=""></div>
                         <span class="lavender-text">à partir de <strong>490 €</strong> / mois</span>
                         <h3>SEA</h3>
                         <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/Iris-front/contact">Demander un devis</router-link></button>
@@ -173,7 +173,7 @@
             </Carousel>
             <div class="formulas">
                 <div class="formula">
-                    <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol-min.png" alt=""></div>
+                    <div class="ai-icon"><img class="ai-icon" src="../../public/AI-symbol-min.png" alt=""></div>
                     <span class="lavender-text">à partir de <strong>490 €</strong> / mois</span>
                     <h3>Campagne Social ADS</h3>
                     <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/Iris-front/contact">Demander un devis</router-link></button>
@@ -185,7 +185,7 @@
                     </ul>
                 </div>
                 <div class="formula">
-                    <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol-min.png" alt=""></div>
+                    <div class="ai-icon"><img class="ai-icon" src="../../public/AI-symbol-min.png" alt=""></div>
                     <span class="lavender-text">à partir de <strong>890 €</strong> / mois</span>
                     <div class="most-popular bgc-dark-blue">LE PLUS POPULAIRE</div>
                     <h3>SEO</h3>
@@ -203,7 +203,7 @@
                     </ul>
                 </div>
                 <div class="formula">
-                    <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol-min.png" alt=""></div>
+                    <div class="ai-icon"><img class="ai-icon" src="../../public/AI-symbol-min.png" alt=""></div>
                     <span class="lavender-text">à partir de <strong>490 €</strong> / mois</span>
                     <h3>SEA</h3>
                     <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/Iris-front/contact">Demander un devis</router-link></button>
@@ -227,7 +227,7 @@
             <Carousel>
                 <Slide :key="slide">
                     <div class="formula">
-                    <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol-min.png" alt=""></div>
+                    <div class="ai-icon"><img class="ai-icon" src="../../public/AI-symbol-min.png" alt=""></div>
                     <span class="lavender-text">à partir de <strong>199 €</strong> / mois</span>
                     <h3>Pack présence</h3>
                     <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/Iris-front/contact">Demander un devis</router-link></button>
@@ -239,7 +239,7 @@
                 </Slide>
                 <Slide :key="slide">
                     <div class="formula">
-                        <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol-min.png" alt=""></div>
+                        <div class="ai-icon"><img class="ai-icon" src="../../public/AI-symbol-min.png" alt=""></div>
                         <span class="lavender-text">à partir de <strong>499 €</strong> / mois</span>
                         <div class="most-popular bgc-dark-blue">LE PLUS POPULAIRE</div>
                         <h3>Pack performance</h3>
@@ -258,7 +258,7 @@
                 </Slide>
                 <Slide :key="slide">
                     <div class="formula">
-                        <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol-min.png" alt=""></div>
+                        <div class="ai-icon"><img class="ai-icon" src="../../public/AI-symbol-min.png" alt=""></div>
                         <span class="lavender-text">à partir de <strong>1499 €</strong> / mois</span>
                         <h3>Pack puissance</h3>
                         <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/Iris-front/contact">Demander un devis</router-link></button>
@@ -280,7 +280,7 @@
             </Carousel>
             <div class="formulas">
                 <div class="formula">
-                    <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol-min.png" alt=""></div>
+                    <div class="ai-icon"><img class="ai-icon" src="../../public/AI-symbol-min.png" alt=""></div>
                     <span class="lavender-text">à partir de <strong>199 €</strong> / mois</span>
                     <h3>Pack présence</h3>
                     <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/Iris-front/contact">Demander un devis</router-link></button>
@@ -290,7 +290,7 @@
                     </ul>
                 </div>
                 <div class="formula">
-                    <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol-min.png" alt=""></div>
+                    <div class="ai-icon"><img class="ai-icon" src="../../public/AI-symbol-min.png" alt=""></div>
                     <span class="lavender-text">à partir de <strong>499 €</strong> / mois</span>
                     <div class="most-popular bgc-dark-blue">LE PLUS POPULAIRE</div>
                     <h3>Pack performance</h3>
@@ -306,7 +306,7 @@
                     </ul>
                 </div>
                 <div class="formula">
-                    <div class="ai-icon"><img class="ai-icon" src="../assets/AI-symbol-min.png" alt=""></div>
+                    <div class="ai-icon"><img class="ai-icon" src="../../public/AI-symbol-min.png" alt=""></div>
                     <span class="lavender-text">à partir de <strong>1499 €</strong> / mois</span>
                     <h3>Pack puissance</h3>
                     <button class="lavender-box prices_button"><router-link class="lavender-box-text" to="/Iris-front/contact">Demander un devis</router-link></button>

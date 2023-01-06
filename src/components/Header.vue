@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <router-link to="/Iris-front/"><img alt="Iris Digital" src="../assets/logo-iris-min.png" class="header_img"/></router-link>
+    <router-link to="/Iris-front/"><img alt="Iris Digital" src="../../public/logo-iris-min.png" class="header_img"/></router-link>
     <nav class="header-nav">
       <ul class="header-nav-list">
         <li><router-link to="/Iris-front/solutions">NOS SOLUTIONS</router-link></li>
