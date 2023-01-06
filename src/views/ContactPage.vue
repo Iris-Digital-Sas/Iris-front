@@ -1,7 +1,7 @@
 <template>
     <section id="bgc-darker-blue">
         <div class="section-contact">
-            <img src="../../public/Iris-logo-min.gif" alt="Iris-logo-gif" class="section-contact_img">
+            <img src="Iris-logo-min.gif" alt="Iris-logo-gif" class="section-contact_img">
             <div class="section-contact-form-bloc">
                 <h1 class="section-contact-form_title">Un projet ? Contactez-nous</h1>
                 <form id="form" class="section-contact-form" @submit.prevent="onSubmit" method="post">
