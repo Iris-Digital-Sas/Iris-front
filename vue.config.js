@@ -5,7 +5,7 @@ module.exports = {
       .rule('images')
         .set('parser', {
           dataUrlCondition: {
-            maxSize: 4 * 1024 // 4KiB
+            maxSize: 1000 * 1024 // 1024 = 1KiB
           }
         })
   }
