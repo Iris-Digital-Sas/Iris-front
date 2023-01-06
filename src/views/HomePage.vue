@@ -47,10 +47,9 @@
         <div class="bgc-dark-blue">
             <h1>Pourquoi nous choisir ? </h1>
             <p>Pour trouver une solution adaptée à votre projet, vos contraintes, votre budget et votre image, nous discuterons ensemble. Nous prendrons le temps d'échanger afin de déterminer votre besoin et d'y répondre le plus efficacement possible. Que vous ayez besoin d'un site vitrine, d'un site d'e-commerce, d'aide pour votre community management, pour votre SEO, ou bien d'un audit pour optimiser vos ventes/process internes avec une intelligence artificielle, nous avons en main les clés pour réaliser votre projet.</p>
-            <div class="lavender-button">
-                <!--<router-link to="/achievements" class="lavender-button-text">REALISATIONS</router-link>-->
-                <a to="#" class="lavender-button-text">REALISATIONS</a>
-            </div>
+            <!--<div class="lavender-button">
+                <router-link to="/achievements" class="lavender-button-text">REALISATIONS</router-link>
+            </div>-->
         </div>
     </section>
     <section class="bgc-grey home-annonce">
@@ -285,7 +284,7 @@
 .home-contact-bloc form > :last-child {
     position: absolute;
     border-radius: 40px;
-    padding: 1% 3%;
+    padding: 15px 55px;
     bottom: -150px;
     right: 790px;
 }
@@ -410,7 +409,7 @@
         position: relative;
         bottom: 0;
         right: 0;
-        padding: 20px 50px
+        padding: 22px 50px;
     }
 }
 @media (max-width: 420px) {

@@ -10,6 +10,6 @@ git init
 
 git add -A
 git commit -m 'New deployment'
-git push -f git@github.com:Iris-Digital-Sas/Iris-front.git master:gh-pages
+git push -f git@github.com:Iris-Digital-Sas.git master:gh-pages
 
 cd -

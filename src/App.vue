@@ -7,16 +7,15 @@
     <Footer_comp />
   </div>  
 </template>
-
 <script>
 import Header_comp from './components/Header.vue';
 import Footer_comp from './components/Footer.vue';
 
 export default {
-name: 'App',
-components: {
-  Footer_comp,
-  Header_comp
+  name: 'App',
+  components: {
+    Footer_comp,
+    Header_comp
   }
 }
 

@@ -4,12 +4,12 @@
             <img src="../assets/Iris-logo.gif" alt="Iris-logo-gif" class="section-contact_img">
             <div class="section-contact-form-bloc">
                 <h1 class="section-contact-form_title">Un projet ? Contactez-nous</h1>
-                <form action="" class="section-contact-form">
-                    <input type="text" placeholder="Nom*" required>
-                    <input type="text" placeholder="Prénom*" required>
-                    <input type="email" placeholder="Email*" required>
-                    <input type="tel" placeholder="Téléphone">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Quelques mots ?"></textarea>
+                <form id="form" class="section-contact-form" @submit.prevent="onSubmit" method="post">
+                    <input type="text" placeholder="Nom*" id="nom" v-model="nom" name="nom" required>
+                    <input type="text" placeholder="Prénom*" id="prenom" v-model="prenom" name="prenom" required>
+                    <input type="email" placeholder="Email*" id="mail" v-model="mail" name="mail" required>
+                    <input type="tel" placeholder="Téléphone" id="tel" v-model="tel" name="tel" >
+                    <textarea name="comment" id="comment" v-model="comment" cols="30" rows="10" placeholder="Quelques mots ?"></textarea>
                     <div id="fa-button">
                     <input id="contact-button" type="submit" value="ENVOYER">
                         <font-awesome-icon icon="fa-solid fa-arrow-down" />
@@ -19,6 +19,41 @@
         </div>
     </section>
 </template>
+
+<script>
+    export default {
+        data() {
+            return {
+                errors: [],
+                nom: "",
+                prenom: "",
+                mail: "",
+                tel: "",
+                comment: ""
+            }
+        },
+        methods: {
+            onSubmit() {
+                let ContactInfos = {
+                    nom: this.nom,
+                    prenom: this.prenom,
+                    mail: this.mail,
+                    tel: this.tel,
+                    comment: this.comment
+                }
+                
+                console.log("Voici les infos de contact : "+ContactInfos)
+        
+
+                this.nom = "",
+                this.prenom = "",
+                this.mail = "",
+                this.tel = "",
+                this.comment = ""
+            }
+        }
+    }
+</script>
 
 <style>
 #bgc-darker-blue {
