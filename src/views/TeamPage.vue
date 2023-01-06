@@ -7,49 +7,49 @@
         <h2 class="team-title">l'équipe d'iris</h2>
         <div class="team_members">
             <figure>
-                <img src="persona-min.jpg" alt="">
+                <img :src="`${publicPath}persona-min.jpg`" alt="">
                 <figcaption>
                     <strong>Geoffrey</strong>
                     <span>Architecte Logiciel</span>
                 </figcaption>                
             </figure>
             <figure>
-                <img src="persona-min.jpg" alt="">
+                <img :src="`${publicPath}persona-min.jpg`" alt="">
                 <figcaption>
                     <strong>Amaury</strong>
                     <span>Marketing Digital</span>
                 </figcaption>                
             </figure>
             <figure>
-                <img src="persona-min.jpg" alt="">
+                <img :src="`${publicPath}persona-min.jpg`" alt="">
                 <figcaption>
                     <strong>Hugo</strong>
                     <span>Ingénieur Intelligence Artificielle et Ingénierie logiciel</span>
                 </figcaption>                
             </figure>
             <figure>
-                <img src="persona-min.jpg" alt="">
+                <img :src="`${publicPath}persona-min.jpg`" alt="">
                 <figcaption>
                     <strong>Sofian</strong>
                     <span>Marketing Digital</span>
                 </figcaption>                
             </figure>
             <figure>
-                <img src="persona-min.jpg" alt="">
+                <img :src="`${publicPath}persona-min.jpg`" alt="">
                 <figcaption>
                     <strong>Marie</strong>
                     <span>Graphiste</span>
                 </figcaption>                
             </figure>
             <figure>
-                <img src="persona-min.jpg" alt="">
+                <img :src="`${publicPath}persona-min.jpg`" alt="">
                 <figcaption>
                     <strong>Enzo</strong>
                     <span>Web designer et Expert SEO</span>
                 </figcaption>                
             </figure>
             <figure>
-                <img src="persona-min.jpg" alt="">
+                <img :src="`${publicPath}persona-min.jpg`" alt="">
                 <figcaption>
                     <strong>Bastian</strong>
                     <span>Dévellopeur Full-Stack</span>
@@ -59,7 +59,7 @@
         <Carousel id="team_carousel">
             <slide :key="slide">
                 <figure>
-                    <img src="persona-min.jpg" alt="">
+                    <img :src="`${publicPath}persona-min.jpg`" alt="">
                     <figcaption>
                         <strong>Geoffrey</strong>
                         <span>Architecte Logiciel</span>
@@ -68,7 +68,7 @@
             </slide>
             <slide :key="slide">
                 <figure>
-                    <img src="persona-min.jpg" alt="">
+                    <img :src="`${publicPath}persona-min.jpg`" alt="">
                     <figcaption>
                         <strong>Amaury</strong>
                         <span>Marketing Digital</span>
@@ -77,7 +77,7 @@
             </slide>
             <slide :key="slide">
                 <figure>
-                    <img src="persona-min.jpg" alt="">
+                    <img :src="`${publicPath}persona-min.jpg`" alt="">
                     <figcaption>
                         <strong>Hugo</strong>
                         <span>Ingénieur Intelligence Artificielle et Ingénierie logiciel</span>
@@ -86,7 +86,7 @@
             </slide>
             <slide :key="slide">
                 <figure>
-                    <img src="persona-min.jpg" alt="">
+                    <img :src="`${publicPath}persona-min.jpg`" alt="">
                     <figcaption>
                         <strong>Sofian</strong>
                         <span>Marketing Digital</span>
@@ -95,7 +95,7 @@
             </slide>
             <slide :key="slide">
                 <figure>
-                    <img src="persona-min.jpg" alt="">
+                    <img :src="`${publicPath}persona-min.jpg`" alt="">
                     <figcaption>
                         <strong>Marie</strong>
                         <span>Graphiste</span>
@@ -104,7 +104,7 @@
             </slide>
             <slide :key="slide">
                 <figure>
-                    <img src="persona-min.jpg" alt="">
+                    <img :src="`${publicPath}persona-min.jpg`" alt="">
                     <figcaption>
                         <strong>Enzo</strong>
                         <span>Web designer et Expert SEO</span>
@@ -113,7 +113,7 @@
             </slide>
             <slide :key="slide">
                 <figure>
-                    <img src="persona-min.jpg" alt="">
+                    <img :src="`${publicPath}persona-min.jpg`" alt="">
                     <figcaption>
                         <strong>Bastian</strong>
                         <span>Dévellopeur Full-Stack</span>
@@ -137,6 +137,11 @@ export default {
     Slide,
     Pagination
   },
+  data () {
+    return {
+        publicPath: process.env.BASE_URL
+    }
+  }
 }
 </script>
 <style>
