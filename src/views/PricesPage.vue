@@ -509,10 +509,13 @@ export default {
     left: -45px;
     top: 70px;
     border-radius: 50%;
-    width: 85px;
+    width: 25%;
     padding: 8.5% .25%;
 }
 @media (max-width: 1000px) {
+  .formula .most-popular{
+    width: 30%;
+  }
     .title-prices {
         height: 750px;
         flex-direction: column;
