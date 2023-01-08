@@ -63,7 +63,7 @@
                 <h1>On discute ?</h1>
                 <p>Décrivez votre projet, précisez vos contraintes, vos envies et donnez nous vos disponibilités afin que nous puissions vous recontacter et échanger avec vous</p>
                 <div class="home-contact-bloc-text_email">
-                    <img src="../../public/email-min.png" alt="email"><span>hello@irisdigital.fr</span>
+                    <img src="../../public/email-min.png" alt="email"><span>info@iris-digital.fr</span>
                 </div>
             </div>
             <form action="">
