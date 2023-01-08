@@ -18,24 +18,24 @@ const router = createRouter({
     },
     {
       name: "HomePage",
-      path: '/Iris-front/',
+      path: '/',
       component: HomePage
     },
     { 
-      path: '/Iris-front/solutions',
+      path: '/solutions',
       component: SolutionsPage 
     },
     { 
-      path: '/Iris-front/team',
+      path: '/team',
       component: TeamPage 
     },
     { 
       name:'PricesPage',
-      path: '/Iris-front/prices',
+      path: '/prices',
       component: PricesPage
     },
     {
-      path: '/Iris-front/contact',
+      path: '/contact',
       component: ContactPage 
     },
     {

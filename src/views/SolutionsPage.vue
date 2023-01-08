@@ -2,7 +2,7 @@
     <section class="solution_intro bgc-grey">
         <h1 class="solution_intro-title">IRIS VOUS OFFRE UNE <br><span class="lavender-text">EXPERTISE</span> COMPLETE DANS LES DOMAINES DU MARKETING DIGITAL ET DE L'IA</h1>
         <div class="lavender-box solution_intro-button">
-            <router-link to="/Iris-front/prices" class="lavender-box-text">NOS TARIFS</router-link>
+            <router-link to="/prices" class="lavender-box-text">NOS TARIFS</router-link>
         </div>        
     </section>
     <div class="bgc-dark-blue solutions">
@@ -21,7 +21,7 @@
                     <p>Nous réalisons vos sites <strong>vitrines</strong> et <strong>e-commerces</strong> avec différentes technologies, en discutant avec vous pour trouver la réponse la plus adaptée à vos besoins et à votre budget.</p>
                     <p>Votre site sera <strong>optimisé</strong> pour un affichage sur ordinateur, mais également sur téléphone, tablette et autres supports.</p>
                     <p>Nous vous fournissons un site <strong>favorisé par l’algorithme</strong> de Google, afin que vos clients potentiels le trouvent facilement lors de leurs recherches.</p>
-                    <router-link to="/Iris-front/prices"><font-awesome-icon icon="fa-solid fa-arrow-down" /> PLUS D'INFOS</router-link>
+                    <router-link to="/prices"><font-awesome-icon icon="fa-solid fa-arrow-down" /> PLUS D'INFOS</router-link>
                 </div>
             </div>
         </section>
@@ -38,7 +38,7 @@
                 <div class="solutions_item_secondpart_textarea">
                     <p>Nous nous occupons de faire ou de refaire votre <strong>référencement</strong> naturel , texte SEO, stratégie de netlinking… </p>
                     <p>Le but est plus simple que les technologies utilisées : faire apparaître votre site parmi les <strong>premiers liens</strong> proposés par les moteurs de recherche.  Cette prestation permet une augmentation drastique du trafic web.</p>
-                    <router-link to="/Iris-front/prices"><font-awesome-icon icon="fa-solid fa-arrow-down" /> PLUS D'INFOS</router-link>
+                    <router-link to="/prices"><font-awesome-icon icon="fa-solid fa-arrow-down" /> PLUS D'INFOS</router-link>
                 </div>
             </div>
         </section>
@@ -56,7 +56,7 @@
                 <div class="solutions_item_secondpart_textarea">
                     <p>Nous discutons avec vous afin de <strong>déterminer la cible</strong> de la campagne de génération de leads ainsi que la nature de votre offre. Les <strong>contacts</strong> vous sont rapidement transmis après leur génération afin de maximiser le taux de conversion.</p>
                     <p>Génération de <strong>prospects</strong> via les réseaux sociaux et les moteurs de recherches.</p>
-                    <router-link to="/Iris-front/prices"><font-awesome-icon icon="fa-solid fa-arrow-down" /> PLUS D'INFOS</router-link>
+                    <router-link to="/prices"><font-awesome-icon icon="fa-solid fa-arrow-down" /> PLUS D'INFOS</router-link>
                 </div>
             </div>
         </section>
@@ -77,11 +77,11 @@
                     <p>Notre rôle sera alors d’assurer votre présence, votre visibilité, votre notoriété et votre image sur les réseaux. Il s’agit de faire <strong>grandir votre communauté</strong> et son intérêt pour vos produits et/ou services afin de booster vos ventes.</p>
                     <p>Ce contenu travaillé par nos soins pourra être envoyé à de 
                     nombreux clients potentiels afin de leur faire connaître votre activité et d’augmenter vos volumes de vente.</p>
-                    <router-link to="/Iris-front/prices"><font-awesome-icon icon="fa-solid fa-arrow-down" /> PLUS D'INFOS</router-link>
+                    <router-link to="/prices"><font-awesome-icon icon="fa-solid fa-arrow-down" /> PLUS D'INFOS</router-link>
                 </div>
             </div>
             <div class="lavender-button">
-                <router-link to="/Iris-front/prices" class="lavender-button-text">NOS TARIFS</router-link>
+                <router-link to="/prices" class="lavender-button-text">NOS TARIFS</router-link>
             </div>
             <!-- Problème de synchronisation des animations, parfois le texte change de couleur trop tard -->
         </section>

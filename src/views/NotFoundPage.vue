@@ -2,7 +2,7 @@
     <section id="notfoundsection">
         <h1>Erreur 404</h1>
         <p>Il semblerait que le lien que vous avez utilisé soit impraticable et que vous ne pouvez aller plus loin.</p>
-        <p>vous pouvez toutefois <router-link to="/Iris-front/">revenir à la page d'acceuil</router-link> grâce à ce lien si vous le voulez.</p>
+        <p>vous pouvez toutefois <router-link to="/">revenir à la page d'acceuil</router-link> grâce à ce lien si vous le voulez.</p>
     </section>
 </template>
 
