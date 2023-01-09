@@ -306,9 +306,22 @@
     background-color: #0000;
     border: 0;
 }
+@media screen and ( max-width: 1660px ) {
+    .solutions_item:nth-child(1) figcaption {
+      right: 0px;
+    }
+}
+@media (max-width: 1470px) { 
+    .solutions_item:nth-child(n) figcaption {
+      top : 100px;
+    }
+}
 @media (max-width: 1363px) {
     .solutions_item:nth-child(3n) img {
         right: 0px;
+    }
+    #cm {
+        height: 1250px;
     }
 }
 @media (max-width: 1000px) {

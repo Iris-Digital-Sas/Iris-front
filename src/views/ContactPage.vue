@@ -182,7 +182,26 @@ export default {
     color: white;
     transition: all 500ms;
 }
-
+@media screen and (max-width: 1500px) {
+    .section-contact_img {
+        bottom: 370px;
+    }
+}
+@media (max-width: 1350px) {
+    .section-contact {
+        padding: 15% 12%;
+    }
+    .section-contact_img {
+        left: -100px;
+        bottom: 460px;
+        height: 325px;
+    }
+}
+@media (max-width: 1200px) {
+    .section-contact-form :nth-child(-n+5) {
+        width: 100%;
+    }
+}
 @media (max-width: 500px) {
     .section-contact{
         width: 100%;

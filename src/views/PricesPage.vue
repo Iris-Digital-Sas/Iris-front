@@ -425,8 +425,9 @@ export default {
     font-weight: 600;
     font-size: 28px;
     line-height: 42px;
-    margin: 0;
+    margin: 0 auto;
     padding-bottom: 5%;
+    width: 80%;
 }
 .formula h3::after {
     content: "";
@@ -504,18 +505,56 @@ export default {
     position: absolute;
     font-weight: 500;
     font-size: 14px;
-    line-height: 21px;
     text-align: center;
-    left: -45px;
+    left: -55px;
     top: 70px;
     border-radius: 50%;
-    width: 25%;
-    padding: 8.5% .25%;
+    width: 100px;
+    padding: 32px 0px;
+}
+@media ( max-width: 1600px) {
+    .formula .ai-icon{
+        right: 5px;
+        top: 5px;
+    }
+}
+@media (max-width: 1400px) {
+    .prices_info {
+        width: 25%;
+        font-size: 120%;
+    }
+    .prices h2 {
+        font-size: 250%;
+    }
+    .prices > span {
+        font-size: 125%;
+    }
+    .formula span{
+        font-size: 110%;
+    }
+    .formula h3{
+        font-size: 130%;
+    }
+}
+@media (max-width: 1200px) and ( min-width: 1000px){
+    .prices_info {
+        width: 35%;
+    }
+    .formula .most-popular {
+        top: -45px;
+    }
+    .formula .ai-icon {
+        top: 0px;
+        right: 0px;
+    }
+    .formula .prices_button {
+        width: 85%;
+    }
+    .formula  .lavender-box-text {
+        font-size: 100%;
+    }
 }
 @media (max-width: 1000px) {
-  .formula .most-popular{
-    width: 30%;
-  }
     .title-prices {
         height: 750px;
         flex-direction: column;

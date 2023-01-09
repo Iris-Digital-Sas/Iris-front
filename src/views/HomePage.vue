@@ -380,7 +380,22 @@ export default {
 .home-contact-bloc .lavender-box:hover .lavender-box-text {
     color: #9EAAFF;
 }
-@media screen and ( max-width: 600px) { 
+@media screen and ( max-width: 1660px) { 
+    .home-realisations {
+        height: 500px;
+    }
+    .home-realisations .bgc-dark-blue {
+        padding: 6%;
+    }
+    .home-contact-bloc {
+        padding: 15% 20%;
+    }
+    .home-contact-bloc form > :last-child {
+        bottom: 60px;
+        right: 38%;
+    }
+}
+@media ( max-width: 600px) { 
     .origin-section {
         height: 600px;
         background-size: cover;
