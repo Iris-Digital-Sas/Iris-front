@@ -1,7 +1,7 @@
 <template>
     <section class="origin-section">
         <div>
-            <p>IRIS met à votre service l’Intelligence Artificielle. boostez votre <span class="lavender-text"> visibilité.</span> <img id="home-gif" src="https://static.wixstatic.com/media/f6e276_207676192cea4e7a90bf76d6fa00f1ac~mv2.gif" alt="possibilitées"></p>
+            <p>IRIS met à votre service l’Intelligence Artificielle. boostez votre <span class="lavender-text"> visibilité.</span><img id="home-gif" src="https://static.wixstatic.com/media/f6e276_207676192cea4e7a90bf76d6fa00f1ac~mv2.gif" alt="possibilitées"></p>
             <a href="#begining"><font-awesome-icon icon="fa-solid fa-arrow-down" /></a>
         </div>
     </section>
@@ -66,17 +66,43 @@
                     <img src="../../public/email-min.png" alt="email"><span>info@iris-digital.fr</span>
                 </div>
             </div>
-            <form action="">
-                <input type="text" placeholder="Nom / Prénom">
-                <input type="email" placeholder="Email">
-                <textarea name="" id="" cols="30" rows="6" placeholder="Quelques mots ?"></textarea>
-                <div class="lavender-box">
-                    <input type="submit" value="CONTACT" class="lavender-box-text">
-                </div>                
+            <form ref="homeForm" @submit.prevent="sendEmailHome" method="post">
+                <input name="nom" type="text" placeholder="Nom / Prénom*" required>
+                <input name="mail" type="email" placeholder="Email*" required>
+                <textarea name="comment" id="comment" cols="30" rows="6" placeholder="Quelques mots ?*" required></textarea>
+                <div id="home-button" class="lavender-box">
+                    <input id="homesubmit-button" type="submit" value="CONTACT" class="lavender-box-text">
+                </div>             
             </form>
+            <div id="homeMailSent">
+                <span>Votre message a bien été envoyé ! </span>
+                <router-link to="/"><font-awesome-icon icon="fa-solid fa-arrow-down" /> Retourner au haut de page <font-awesome-icon icon="fa-solid fa-arrow-down" /></router-link> 
+            </div>  
         </div>
     </section>
 </template>
+
+<script>
+import emailjs from '@emailjs/browser';
+
+export default {
+    methods: {
+        sendEmailHome() {
+            let homeSubmitBox = document.getElementById('home-button');
+            let homeSentMail = document.getElementById('homeMailSent');
+
+            emailjs.sendForm('service_1py3dir', 'template_pvts31w', this.$refs.homeForm, 'BAjJ10s_sN_Fo5WEB')
+                .then((result) => {
+                    console.log('SUCCESS!', result.text);
+                    homeSubmitBox.style.display = 'none';
+                    homeSentMail.style.display = 'flex';
+                }, (error) => {
+                    console.log('FAILED...', error.text);
+            });
+        }
+    }
+}
+</script>
 
 <style>
 .origin-section {
@@ -303,6 +329,53 @@
     font-weight: 500;
     font-size: 22px;
     line-height: 33px;
+}
+#homeMailSent {
+    display: none;
+    background-color: #69df69;
+    text-align: center;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-around;
+    bottom: -183px;
+    width: 330px;
+    left: 40%;
+    border: 0px;
+    border-radius: 15px;
+    padding: 10px 5px;
+    flex-basis: 100%;
+    height: 100px;
+}
+#homeMailSent > * {
+    padding: 0;
+}
+#homeMailSent span {
+    border: none;
+    color: black;
+}
+#homeMailSent a {
+    color: #0d4d91;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#homeMailSent a:hover {
+    color: white;
+    transition: all 500ms;
+}
+#homeMailSent a:hover svg{
+    color: white;
+    border: white;
+    transition: all 500ms;
+}
+#homeMailSent a svg{
+    rotate: 180deg;
+    color: #0d4d91;
+    border: 1px solid #0d4d91;
+    border-radius: 50%;
+    padding: 10px;
+    width: 20px;
 }
 .home-contact-bloc .lavender-box:hover .lavender-box-text {
     color: #9EAAFF;

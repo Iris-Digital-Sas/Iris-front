@@ -6,7 +6,7 @@ npm run build
 
 cd dist
 
-echo 'www.iris-digital.fr' > CNAME
+echo 'iris-digital.fr' > CNAME
 
 git init 
 

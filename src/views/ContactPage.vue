@@ -4,16 +4,21 @@
             <img src="../../public/Iris-logo-min.gif" alt="Iris-logo-gif" class="section-contact_img">
             <div class="section-contact-form-bloc">
                 <h1 class="section-contact-form_title">Un projet ? Contactez-nous</h1>
-                <form ref="form" id="form" class="section-contact-form" @submit.prevent="sendEmail" method="post">
+                <form ref="contactForm" id="form" class="section-contact-form" @submit.prevent="sendEmailContact" method="post">
                     <input type="text" placeholder="Nom*" id="nom" v-model="nom" name="nom" required>
                     <input type="text" placeholder="Prénom*" id="prenom" v-model="prenom" name="prenom" required>
                     <input type="email" placeholder="Email*" id="mail" v-model="mail" name="mail" required>
                     <input type="tel" placeholder="Téléphone" id="tel" v-model="tel" name="tel" >
-                    <textarea name="comment" id="comment" v-model="comment" cols="30" rows="10" placeholder="Quelques mots ?"></textarea>
+                    <textarea name="comment" id="comment" v-model="comment" cols="30" rows="10" placeholder="Quelques mots ?*" required></textarea>
                     <div id="fa-button">
-                    <input id="contact-button" type="submit" value="ENVOYER">
-                    <font-awesome-icon icon="fa-solid fa-arrow-down" />
-                    </div>         
+                        <input id="contact-button" type="submit" value="ENVOYER">
+                        <font-awesome-icon id="contact-icon" icon="fa-solid fa-arrow-down" />
+                        <div id="mailsent">
+                            <span>Votre message a bien été envoyé ! vous pouvez </span>
+                            <router-link to="/">Retourner à la page d'acceuil </router-link> 
+                            <span>si vous voulez</span> 
+                        </div>
+                    </div>                             
                 </form>
             </div>            
         </div>
@@ -23,18 +28,27 @@
 <script>
 import emailjs from '@emailjs/browser';
 
-    export default {
-        methods: {
-            sendEmail() {
-                emailjs.sendForm('service_1py3dir', 'template_pvts31w', this.$refs.form, 'BAjJ10s_sN_Fo5WEB')
-                    .then((result) => {
-                        console.log('SUCCESS!', result.text);
-                    }, (error) => {
-                        console.log('FAILED...', error.text);
-                });
-            }
+export default {
+    methods: {
+        sendEmailContact() {
+            let submitBox = document.getElementById('fa-button');
+            let submitButton = document.getElementById('contact-button');
+            let submitIcon = document.getElementById('contact-icon');
+            let mailsent = document.getElementById('mailsent');
+
+            emailjs.sendForm('service_1py3dir', 'template_lm1gp99', this.$refs.contactForm, 'BAjJ10s_sN_Fo5WEB')
+                .then((result) => {
+                    console.log('SUCCESS!', result.text);
+                    submitButton.style.display = 'none';
+                    submitIcon.style.display = 'none';
+                    submitBox.style.width = '100%'
+                    mailsent.style.display = 'block';
+                }, (error) => {
+                    console.log('FAILED...', error.text);
+            });
         }
     }
+}
 </script>
 
 <style>
@@ -141,6 +155,32 @@ import emailjs from '@emailjs/browser';
     
     transform: rotate(-90deg);
     transition: transform 500ms 150ms;
+}
+#mailsent {
+    display: none;
+    background-color: green;
+    text-align: center;
+    margin-top: 100px;
+    border: 0px;
+    border-radius: 15px;
+    padding: 10px 5px;
+    flex-basis: 100%;
+    height: 100px;
+}
+#mailsent > * {
+    padding: 0;
+}
+#mailsent span {
+    border: none;
+    color: white;
+}
+#mailsent a {
+    color: blue;
+    border: none;
+}
+#mailsent a:hover {
+    color: white;
+    transition: all 500ms;
 }
 
 @media (max-width: 500px) {
