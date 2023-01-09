@@ -4,7 +4,7 @@
             <img src="../../public/Iris-logo-min.gif" alt="Iris-logo-gif" class="section-contact_img">
             <div class="section-contact-form-bloc">
                 <h1 class="section-contact-form_title">Un projet ? Contactez-nous</h1>
-                <form id="form" class="section-contact-form" @submit.prevent="onSubmit" method="post">
+                <form ref="form" id="form" class="section-contact-form" @submit.prevent="sendEmail" method="post">
                     <input type="text" placeholder="Nom*" id="nom" v-model="nom" name="nom" required>
                     <input type="text" placeholder="Prénom*" id="prenom" v-model="prenom" name="prenom" required>
                     <input type="email" placeholder="Email*" id="mail" v-model="mail" name="mail" required>
@@ -12,8 +12,8 @@
                     <textarea name="comment" id="comment" v-model="comment" cols="30" rows="10" placeholder="Quelques mots ?"></textarea>
                     <div id="fa-button">
                     <input id="contact-button" type="submit" value="ENVOYER">
-                        <font-awesome-icon icon="fa-solid fa-arrow-down" />
-                    </div>                    
+                    <font-awesome-icon icon="fa-solid fa-arrow-down" />
+                    </div>         
                 </form>
             </div>            
         </div>
@@ -21,35 +21,17 @@
 </template>
 
 <script>
-    export default {
-        data() {
-            return {
-                errors: [],
-                nom: "",
-                prenom: "",
-                mail: "",
-                tel: "",
-                comment: ""
-            }
-        },
-        methods: {
-            onSubmit() {
-                let ContactInfos = {
-                    nom: this.nom,
-                    prenom: this.prenom,
-                    mail: this.mail,
-                    tel: this.tel,
-                    comment: this.comment
-                }
-                
-                console.log("Voici les infos de contact : "+ContactInfos)
-        
+import emailjs from '@emailjs/browser';
 
-                this.nom = "",
-                this.prenom = "",
-                this.mail = "",
-                this.tel = "",
-                this.comment = ""
+    export default {
+        methods: {
+            sendEmail() {
+                emailjs.sendForm('service_1py3dir', 'template_pvts31w', this.$refs.form, 'BAjJ10s_sN_Fo5WEB')
+                    .then((result) => {
+                        console.log('SUCCESS!', result.text);
+                    }, (error) => {
+                        console.log('FAILED...', error.text);
+                });
             }
         }
     }
