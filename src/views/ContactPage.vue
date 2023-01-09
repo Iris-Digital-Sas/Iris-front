@@ -158,7 +158,7 @@ export default {
 }
 #mailsent {
     display: none;
-    background-color: green;
+    background-color: #69df69;
     text-align: center;
     margin-top: 100px;
     border: 0px;
@@ -172,10 +172,10 @@ export default {
 }
 #mailsent span {
     border: none;
-    color: white;
+    color: black;
 }
 #mailsent a {
-    color: blue;
+    color: #0d4d91;
     border: none;
 }
 #mailsent a:hover {
