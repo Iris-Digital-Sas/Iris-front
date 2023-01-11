@@ -508,5 +508,16 @@ export default {
     .home-solutions .lavender-box a {
         padding: 15px 0;
     }
+    .home-contact-bloc { 
+        height: 100%;
+        justify-content: space-evenly;
+    }
+    .home-contact-bloc .lavender-box .lavender-box-text {
+        top: 10px;
+        left: 32px;
+    }
+    .home-contact-bloc form > :last-child {
+        padding: 15px 40px;
+    }
 }
 </style>

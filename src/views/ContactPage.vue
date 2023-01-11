@@ -202,7 +202,56 @@ export default {
         width: 100%;
     }
 }
-@media (max-width: 500px) {
+@media (max-width: 1050px) and (min-width: 920px) {
+    .section-contact-form {
+        padding-left: 50px;
+        column-gap: 75px;
+    }
+    
+    .section-contact-form :nth-child(n) {
+        width: 250px;
+    }
+}
+@media (max-width: 920px) {
+    .section-contact {
+        padding: 0% 5%;
+        width: 90%;
+    }
+    .section-contact_img {
+        left: 5px;
+        bottom: 415px;
+        height: 500px;
+        width: 100%;
+    }
+    .section-contact, .section-contact-form-bloc {
+        height: 1000px;
+    }
+    .section-contact-form-bloc {
+        justify-content: space-evenly;
+        flex-basis: 100%;
+    }
+    .section-contact-form-bloc > * {
+            padding-left: 0;
+            border: none;
+    }
+    .section-contact-form {
+        width: 100%;
+    }
+    .section-contact-form :nth-child(-n+5) {
+        width: 37%;
+    }
+}
+@media (max-width: 650px) and (min-width: 600px){
+    section-contact_img {
+        left: -100px;
+        width: 850px;
+    }
+}
+@media (max-width: 600px) {
+    #bgc-darker-blue {
+        padding: 0 5%;
+        height: 1500px;
+    }
     .section-contact{
         width: 100%;
         padding: 17% 0 0;
@@ -216,10 +265,10 @@ export default {
         font-size: 165%;
     }
     .section-contact_img{
-        left: 16%;
-        bottom: 32%;
-        width: 300px;
-        height: 200px;
+        left: -3%;
+        bottom: 40%;
+        width: 100%;
+        height: 300px;
     }
     .section-contact-form {
         width: 100%;
@@ -241,9 +290,10 @@ export default {
         align-self: center;
     }
 }
-@media (max-width: 400px) {
+@media (max-width: 420px) {
     .section-contact_img{
-        left: 12%;
+        left: 0;
+        bottom: 42%;
     }
 }
 </style>
