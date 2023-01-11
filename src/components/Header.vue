@@ -9,7 +9,7 @@
         <li><router-link to="/contact">CONTACT</router-link></li>
       </ul>
     </nav>
-    <Slide :closeOnNavigation="true" >
+    <Slide :closeOnNavigation="true" v-on:click="menuAnimation">
       <ul class="menu">
         <li><router-link to="/solutions">NOS SOLUTIONS</router-link></li>
         <li><router-link to="/team">L'EQUIPE</router-link></li>
@@ -32,7 +32,27 @@ export default {
       return {
         isOpen: false
       }
+    },
+    methods: {
+      menuAnimation: function () {
+
+        let menu = document.querySelector(".bm-menu");
+        
+        /* On créer une variable pour la taille de l'élément et on regarde sa valeur attribué de base pour voir si le menu s'ouvre ou se ferme */
+        let width = menu.style.width;
+
+        if (width==="300px") {
+          menu.style.width = "100%";
+          console.log(menu.style.width);
+        }
+        if (width==="0px") {
+          menu.style.width = "0";
+          console.log(menu.style.width);
+        }
+       
+      }
     }
+      
 }
 </script>
 
@@ -82,7 +102,7 @@ export default {
 }
 header .bm-menu {
   height: 28.5%;
-  padding-top: 75px;
+  padding: 75px 0 30px;
   background-color: rgba(20, 20, 44, 1);
 }
 .menu {
@@ -126,6 +146,12 @@ header .bm-menu {
 }
 
 @media (max-width: 1000px) {
+  .header .bm-menu{
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .cross-style {
+    opacity: 0;
+  }
   .header {
     background-color: rgba(20, 20, 44, 1);
     flex-direction: row-reverse;
@@ -156,11 +182,14 @@ header .bm-menu {
   }
 }
 @media (max-width: 430px) {
-  .header .bm-menu{
-    background-color: rgba(0, 0, 0, 0);
+  #begining {
+    height: 2000px;
   }
-  .cross-style {
-    opacity: 0;
+  .home-solutions div {
+    gap: 150px;
+  }
+  .home-realisations img {
+    height: 400px;
   }
 }
 @media (min-width: 1000px) {

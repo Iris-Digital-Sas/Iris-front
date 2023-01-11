@@ -458,6 +458,7 @@ export default {
     }
     .home-realisations {
         flex-direction: column;
+        height: 1000px;
     }
     .home-realisations img {
         flex-basis: 30%;
